@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Services from "../Services/services";
 import VideoSection from "./VideoSection";
+import Footer from "../../components/Footer";
 
 const services = [
   {
@@ -332,12 +333,13 @@ const Home = () => {
         </section>
       </main>
 
-      <footer className="border-t border-black/10">
+      {/* <footer className="border-t border-black/10">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-8 text-sm text-black/45 sm:flex-row sm:items-center sm:justify-between lg:px-8">
           <p>© 2026 MS Group. All rights reserved.</p>
           <p>Events • Experiences • Branding • Production</p>
         </div>
-      </footer>
+      </footer> */}
+      <Footer/>
     </div>
   );
 }
