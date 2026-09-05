@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Services from "../Services/services";
-
+import VideoSection from "./VideoSection";
 
 const services = [
   {
@@ -245,6 +245,7 @@ const Home = () => {
             ))}
           </div>
         </section> */}
+        <VideoSection/>
         <Services />
         {/* ABOUT STRIP */}
         <section id="about" className="bg-[#111] text-white">
