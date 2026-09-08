@@ -25,7 +25,7 @@ function Header() {
           <img
             src="/ms-group-logo.png"
             alt="MS Group"
-            className="h-12 w-auto object-contain"
+            className="h-16 w-auto object-contain"
           />
         </button>
 

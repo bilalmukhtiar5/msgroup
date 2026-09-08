@@ -1,4 +1,4 @@
-import React from 'react'
+//import React from 'react'
 
 
 
@@ -107,47 +107,55 @@ const services = [
 ];
 
 const Services = () => {
-  return (
-    
-    <div className="min-h-screen bg-white">
-        {/* SERVICES */}
-        <section id="services" className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
-          <div className="max-w-3xl">
-            <p className="section-kicker">What we do</p>
-            <h2 className="mt-3 text-4xl font-black tracking-tight sm:text-5xl">
-              Complete solutions for
-              <span className="text-msred"> every brand moment.</span>
-            </h2>
-            <p className="mt-5 max-w-2xl leading-7 text-black/55">
-              From concept to execution, MS Group brings strategy, creativity,
-              production and people together under one roof.
-            </p>
-          </div>
+  const goTo = (id) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  };
 
-          <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-            {services.map((service) => (
-              <button
-                key={service.id}
-                onClick={() => goTo(service.id)}
-                className="group min-h-[310px] rounded-3xl border border-black/10 bg-white p-6 text-left shadow-sm transition duration-300 hover:-translate-y-1 hover:border-msred/30 hover:shadow-soft"
-              >
-                <div className="flex items-start justify-between">
-                  <span className="text-xs font-black tracking-widest text-black/30">{service.number}</span>
-                  <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-msred/10 text-xl text-msred transition group-hover:bg-msred group-hover:text-white">
-                    {service.icon}
-                  </span>
-                </div>
-                <h3 className="mt-12 text-xl font-black leading-tight">{service.title}</h3>
-                <p className="mt-3 text-sm leading-6 text-black/50">{service.short}</p>
-                <span className="mt-6 inline-flex items-center gap-2 text-xs font-black uppercase tracking-wider text-msred">
-                  View details <span className="transition group-hover:translate-x-1">→</span>
+  return (
+    <div className="min-h-screen bg-white">
+      {/* SERVICES */}
+      <section id="services" className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
+        <div className="max-w-3xl">
+  <p className="text-lg font-bold uppercase tracking-wider text-msred">
+    What we do
+  </p>
+
+  <h2 className="mt-3 text-4xl font-black tracking-tight sm:text-5xl">
+    Complete solutions for
+    <span className="text-msred"> every brand moment.</span>
+  </h2>
+
+  <p className="mt-5 max-w-2xl leading-7 text-black/55">
+    From concept to execution, MS Group brings strategy, creativity,
+    production and people together under one roof.
+  </p>
+</div>
+
+        <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+          {services.map((service) => (
+            <button
+              key={service.id}
+              onClick={() => goTo(service.id)}
+              className="group min-h-[310px] rounded-3xl border border-black/10 bg-white p-6 text-left shadow-sm transition duration-300 hover:-translate-y-1 hover:border-msred/30 hover:shadow-soft"
+            >
+              <div className="flex items-start justify-between">
+                <span className="text-xs font-black tracking-widest text-black/30">{service.number}</span>
+                <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-msred/10 text-xl text-msred transition group-hover:bg-msred group-hover:text-white">
+                  {service.icon}
                 </span>
-              </button>
-            ))}
-          </div>
-        </section>
+              </div>
+              <h3 className="mt-12 text-xl font-black leading-tight">{service.title}</h3>
+              <p className="mt-3 text-sm leading-6 text-black/50">{service.short}</p>
+              <span className="mt-6 inline-flex items-center gap-2 text-xs font-black uppercase tracking-wider text-msred">
+                View details <span className="transition group-hover:translate-x-1">→</span>
+              </span>
+            </button>
+          ))}
+        </div>
+      </section>
     </div>
   )
 }
 
-export default Services
+export { services };
+export default Services;

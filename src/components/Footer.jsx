@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from "../image/ms-group-logo.png";
 
 const Footer = () => {
   return (
@@ -31,9 +32,10 @@ const Footer = () => {
 
           {/* Brand */}
           <div className="lg:col-span-1">
-            <p className="text-2xl font-black tracking-tight">
+            {/* <p className="text-2xl font-black tracking-tight">
               MS <span className="text-msred">Group</span>
-            </p>
+            </p> */}
+            <img src={logo} alt="" />
             <p className="mt-4 text-sm leading-6 text-white/50">
               Creative production for events and experiences that people
               actually remember.
