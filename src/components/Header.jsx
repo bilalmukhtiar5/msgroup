@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,12 +14,13 @@ function Header() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-black/10 bg-white/90 backdrop-blur-xl">
-      
+
       {/* Main Navbar */}
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 lg:px-8">
 
         {/* Logo */}
-        <button
+        <Link
+          to="/"
           onClick={() => goTo("home")}
           className="flex items-center"
         >
@@ -27,46 +29,48 @@ function Header() {
             alt="MS Group"
             className="h-16 w-auto object-contain"
           />
-        </button>
+        </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden items-center gap-9 text-sm font-semibold lg:flex">
-          
-          <button
-            onClick={() => goTo("home")}
+
+          <Link
+            to="/"
             className="nav-link"
           >
             Home
-          </button>
+          </Link>
 
-          <button
-            onClick={() => goTo("services")}
+          <Link
+            to="/services"
             className="nav-link"
           >
             Services
-          </button>
+          </Link>
 
-          <button
-            onClick={() => goTo("about")}
+          <Link
+            to="/about"
             className="nav-link"
           >
             About
-          </button>
+          </Link>
 
-          <button
-            onClick={() => goTo("contact")}
+          <Link
+            to="/contact"
             className="nav-link"
           >
-            Contact
-          </button>
-
+            Contact Us
+          </Link>
+          <Link to="/team" className="nav-link">
+            Team
+          </Link>
           {/* Quote Button */}
-          <button
-            onClick={() => goTo("contact")}
+          <Link
+            to="/contact"
             className="rounded-full bg-msred px-5 py-2.5 text-white transition hover:bg-msredDark"
           >
             Get a Quote
-          </button>
+          </Link>
 
         </nav>
 
@@ -84,7 +88,7 @@ function Header() {
       {/* Mobile Navigation */}
       {menuOpen && (
         <div className="border-t border-black/10 bg-white px-5 py-5 lg:hidden">
-          
+
           <div className="flex flex-col gap-4 text-sm font-semibold">
 
             <button
@@ -115,12 +119,12 @@ function Header() {
               Contact
             </button>
 
-            <button
-              onClick={() => goTo("contact")}
+            <Link
+              to="/contact"
               className="w-fit rounded-full bg-msred px-5 py-2.5 text-white"
             >
               Get a Quote
-            </button>
+            </Link>
 
           </div>
 

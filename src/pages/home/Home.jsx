@@ -1,7 +1,8 @@
 import { useState } from "react";
-import Services, { services } from "../Services/services";
+import Services, { services } from "../Services/ServicesCard";
 import VideoSection from "./VideoSection";
-import Footer from "../../components/Footer";
+import { Link } from "react-router-dom";
+
 
 
 
@@ -149,34 +150,12 @@ const Home = () => {
               Each service category can become its own detailed page later.
               For this demo, the complete sub-services are shown below.
             </p>
-          </div>
-
-          <div className="space-y-6">
-            {services.map((service) => (
-              <article id={service.id} key={service.id} className="scroll-mt-28 overflow-hidden rounded-3xl border border-black/10">
-                <div className="grid lg:grid-cols-[.42fr_.58fr]">
-                  <div className="bg-[#111] p-7 text-white sm:p-10">
-                    <div className="flex items-center justify-between">
-                      <span className="text-sm font-black tracking-widest text-white/35">{service.number}</span>
-                      <span className="text-2xl text-msred">{service.icon}</span>
-                    </div>
-                    <h3 className="mt-12 max-w-md text-3xl font-black leading-tight sm:text-4xl">{service.title}</h3>
-                    <p className="mt-5 max-w-md text-sm leading-6 text-white/50">{service.short}</p>
-                  </div>
-
-                  <div className="p-7 sm:p-10">
-                    <div className="grid gap-x-8 gap-y-3 sm:grid-cols-2">
-                      {service.items.map((item) => (
-                        <div key={item} className="flex items-start gap-3 border-b border-black/5 py-3 text-sm">
-                          <span className="mt-0.5 font-bold text-msred">✓</span>
-                          <span className="text-black/70">{item}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </article>
-            ))}
+            <Link
+              to="/services"
+              className="mt-6 inline-block rounded-full bg-msred px-5 py-2.5 text-white transition hover:bg-msredDark"
+            >
+              View All Services
+            </Link>
           </div>
         </section>
 
@@ -195,14 +174,7 @@ const Home = () => {
           </div>
         </section>
       </main>
-
-      {/* <footer className="border-t border-black/10">
-        <div className="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-8 text-sm text-black/45 sm:flex-row sm:items-center sm:justify-between lg:px-8">
-          <p>© 2026 MS Group. All rights reserved.</p>
-          <p>Events • Experiences • Branding • Production</p>
-        </div>
-      </footer> */}
-      <Footer/>
+      
     </div>
   );
 }

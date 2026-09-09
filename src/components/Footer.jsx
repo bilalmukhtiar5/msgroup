@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../image/ms-group-logo.png";
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -35,7 +35,11 @@ const Footer = () => {
             {/* <p className="text-2xl font-black tracking-tight">
               MS <span className="text-msred">Group</span>
             </p> */}
-            <img src={logo} alt="" />
+            <img
+            src="/ms-group-logo.png"
+            alt="MS Group"
+            className="h-16 w-auto object-contain"
+          />
             <p className="mt-4 text-sm leading-6 text-white/50">
               Creative production for events and experiences that people
               actually remember.
@@ -46,10 +50,10 @@ const Footer = () => {
           <div>
             <p className="text-sm font-semibold text-white/40">Studio</p>
             <ul className="mt-5 space-y-3 text-sm">
-              <li><a href="#about" className="text-white/70 transition-colors hover:text-white">About</a></li>
+              <li><a href="#about" className="text-white/70 transition-colors hover:text-white">About Us</a></li>
               <li><a href="#work" className="text-white/70 transition-colors hover:text-white">Our Work</a></li>
               <li><a href="#services" className="text-white/70 transition-colors hover:text-white">Services</a></li>
-              <li><a href="#video" className="text-white/70 transition-colors hover:text-white">Showreel</a></li>
+              <li><a href="#contact" className="text-white/70 transition-colors hover:text-white">Contact</a></li>
             </ul>
           </div>
 
@@ -69,8 +73,9 @@ const Footer = () => {
             <p className="text-sm font-semibold text-white/40">Contact</p>
             <ul className="mt-5 space-y-3 text-sm text-white/70">
               <li>+92 300 1234567</li>
-              <li>Lahore, Pakistan</li>
+              <li>Peshawar, Pakistan</li>
               <li className="flex gap-4 pt-2">
+                
                 <a href="#" aria-label="Instagram" className="transition-colors hover:text-msred">Instagram</a>
                 <a href="#" aria-label="LinkedIn" className="transition-colors hover:text-msred">LinkedIn</a>
               </li>
@@ -80,11 +85,11 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="flex flex-col items-center justify-between gap-4 border-t border-white/10 py-8 text-xs text-white/40 sm:flex-row">
+        <div className="flex flex-col items-center justify-between gap-4 border-t border-white/10 py-8 text-xs text-white sm:flex-row">
           <p>© {new Date().getFullYear()} MS Group. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="#" className="transition-colors hover:text-white">Privacy Policy</a>
-            <a href="#" className="transition-colors hover:text-white">Terms</a>
+            <Link to="/privacy" className="transition-colors hover:text-white">Privacy Policy</Link>
+            <Link to="/terms" className="transition-colors hover:text-white">Terms</Link>
           </div>
         </div>
 
