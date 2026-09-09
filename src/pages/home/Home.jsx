@@ -23,10 +23,10 @@ const Home = () => {
       {/* HERO */}
       <main id="home" className="pt-20">
         <section className="relative overflow-hidden bg-[#111] text-white">
-          <div className="absolute -right-32 -top-40 h-[520px] w-[520px] rounded-full bg-msred/20 blur-3xl" />
-          <div className="absolute -bottom-52 -left-32 h-[420px] w-[420px] rounded-full bg-msred/10 blur-3xl" />
+          <div className="absolute -right-32 -top-40 h-130 w-130 rounded-full bg-msred/20 blur-3xl" />
+          <div className="absolute -bottom-52 -left-32 h-105 w-105 rounded-full bg-msred/10 blur-3xl" />
 
-          <div className="relative mx-auto grid min-h-[650px] max-w-7xl items-center gap-14 px-5 py-20 lg:grid-cols-[1.05fr_.95fr] lg:px-8">
+          <div className="relative mx-auto grid min-h-162.5 max-w-7xl items-center gap-14 px-5 py-20 lg:grid-cols-[1.05fr_.95fr] lg:px-8">
             <div>
               <p className="mb-5 inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.28em] text-msred">
                 <span className="h-px w-9 bg-msred" />
@@ -77,8 +77,8 @@ const Home = () => {
 
             {/* Hero visual */}
             <div className="relative mx-auto w-full max-w-xl">
-              <div className="aspect-[4/5] rounded-[2rem] border border-white/10 bg-gradient-to-br from-msred/35 via-msred/10 to-white/[.03] p-4 shadow-2xl">
-                <div className="relative flex h-full flex-col justify-between overflow-hidden rounded-[1.5rem] border border-white/10 bg-black/50 p-7">
+              <div className="aspect-4/5 rounded-4xl border border-white/10 bg-linear-to-br from-msred/35 via-msred/10 to-white/03 p-4 shadow-2xl">
+                <div className="relative flex h-full flex-col justify-between overflow-hidden rounded-3xl border border-white/10 bg-black/50 p-7">
                   <div className="flex items-center justify-between">
                     <span className="text-xs font-bold uppercase tracking-[.22em] text-white/50">MS Group</span>
                     <span className="h-3 w-3 rounded-full bg-msred" />
@@ -95,13 +95,13 @@ const Home = () => {
 
                   <div className="grid grid-cols-2 gap-2">
                     {["EVENTS", "ACTIVATION", "PRODUCTION", "BRANDING"].map((x) => (
-                      <div key={x} className="border border-white/10 bg-white/[.04] px-3 py-3 text-[10px] font-bold tracking-[.16em] text-white/60">
+                      <div key={x} className="border border-white/10 bg-white/04 px-3 py-3 text-[10px] font-bold tracking-[.16em] text-white/60">
                         {x}
                       </div>
                     ))}
                   </div>
 
-                  <div className="absolute -right-16 top-24 h-40 w-40 rounded-full border-[32px] border-msred/70" />
+                  <div className="absolute -right-16 top-24 h-40 w-40 rounded-full border-32px border-msred/70" />
                   <div className="absolute -left-20 bottom-24 h-52 w-52 rounded-full border border-white/10" />
                 </div>
               </div>
@@ -130,7 +130,7 @@ const Home = () => {
               </p>
               <div className="grid gap-3 sm:grid-cols-2">
                 {["Creative execution", "End-to-end production", "Professional teams", "Brand-focused delivery"].map((x) => (
-                  <div key={x} className="border border-white/10 bg-white/[.03] px-5 py-4 text-sm font-semibold text-white/80">
+                  <div key={x} className="border border-white/10 bg-white/03 px-5 py-4 text-sm font-semibold text-white/80">
                     <span className="mr-3 text-msred">+</span>{x}
                   </div>
                 ))}
@@ -161,7 +161,7 @@ const Home = () => {
 
         {/* CTA */}
         <section id="contact" className="mx-auto max-w-7xl px-5 pb-24 lg:px-8">
-          <div className="overflow-hidden rounded-[2rem] bg-msred px-7 py-14 text-white sm:px-12 lg:flex lg:items-center lg:justify-between">
+          <div className="overflow-hidden rounded-4xl bg-msred px-7 py-14 text-white sm:px-12 lg:flex lg:items-center lg:justify-between">
             <div>
               <p className="text-xs font-bold uppercase tracking-[.25em] text-white/60">Let’s work together</p>
               <h2 className="mt-3 max-w-2xl text-4xl font-black tracking-tight sm:text-5xl">

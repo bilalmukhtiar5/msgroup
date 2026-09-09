@@ -3,7 +3,8 @@ import React from 'react'
 const leadership = [
   {
     name: "Full Name",
-    role: "Chief Executive Officer",
+    role: "CEO/Managing Director",
+    email: "ceo@msgroup.pk",
     image: "/team/ceo.jpg",
   },
 ]
@@ -11,17 +12,32 @@ const leadership = [
 const management = [
   {
     name: "Full Name",
-    role: "Head of Operations",
+    role: "Business Development Manager",
+    email: "bdm@msgroup.pk",
     image: "/team/person1.jpg",
   },
   {
     name: "Full Name",
-    role: "Creative Director",
+    role: "Operations / Project Manager",
+    email: "operations@msgroup.pk",
     image: "/team/person2.jpg",
   },
   {
     name: "Full Name",
-    role: "Head of Production",
+    role: "Accounts / Finance",
+    email: "accounts@msgroup.pk",
+    image: "/team/person3.jpg",
+  },
+  {
+    name: "Full Name",
+    role: "Admin / HR Manager",
+    email: "admin@msgroup.pk",
+    image: "/team/person3.jpg",
+  },
+  {
+    name: "Full Name",
+    role: "General Enquiries",
+    email: "info@msgroup.pk",
     image: "/team/person3.jpg",
   },
 ]
@@ -62,14 +78,16 @@ const Team = () => {
         {leadership.map((person) => (
           <div
             key={person.name}
-            className="overflow-hidden rounded-[2rem] bg-[#111] text-white lg:flex lg:items-center"
+
+            className="overflow-hidden rounded-4xl bg-[#111] text-white lg:flex lg:items-center"
           >
-            <div className="aspect-square w-full overflow-hidden lg:w-[340px]">
+            <div className="aspect-square w-full overflow-hidden lg:w-85">
               <img
                 src={person.image}
                 alt={person.name}
                 className="h-full w-full object-cover"
               />
+             
             </div>
             <div className="p-8 sm:p-12">
               <p className="text-xs font-bold uppercase tracking-[.25em] text-msred">
@@ -79,6 +97,7 @@ const Team = () => {
                 {person.name}
               </h2>
               <p className="mt-2 text-white/50">{person.role}</p>
+              <p className="mt-5 max-w-lg text-sm leading-6 text-white/60">{person.email}</p>
               <p className="mt-5 max-w-lg text-sm leading-6 text-white/60">
                 Leading MS Group's vision with a focus on creativity,
                 client relationships and flawless execution across every
@@ -102,7 +121,7 @@ const Team = () => {
               key={person.name}
               className="overflow-hidden rounded-3xl border border-black/10"
             >
-              <div className="aspect-[4/5] w-full overflow-hidden bg-black/5">
+              <div className="aspect-4/5 w-full overflow-hidden bg-black/5">
                 <img
                   src={person.image}
                   alt={person.name}
@@ -112,6 +131,14 @@ const Team = () => {
               <div className="p-5">
                 <h3 className="text-lg font-black">{person.name}</h3>
                 <p className="mt-1 text-sm text-msred">{person.role}</p>
+                {person.email && (
+                  <a
+                    href={`mailto:${person.email}`}
+                    className="mt-2 inline-block text-sm text-msred hover:text-msredDark"
+                  >
+                    {person.email}
+                  </a>
+                )}
               </div>
             </div>
           ))}
@@ -130,9 +157,9 @@ const Team = () => {
             {staff.map((person) => (
               <div
                 key={person.name}
-                className="overflow-hidden rounded-2xl bg-white/[.04] border border-white/10"
+                className="overflow-hidden rounded-2xl bg-white/4 border border-white/10"
               >
-                <div className="aspect-square w-full overflow-hidden bg-white/[.06]">
+                <div className="aspect-square w-full overflow-hidden bg-white/6">
                   <img
                     src={person.image}
                     alt={person.name}

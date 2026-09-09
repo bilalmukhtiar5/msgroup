@@ -66,10 +66,10 @@ function Header() {
           </Link>
           {/* Quote Button */}
           <Link
-            to="/contact"
+            to="/careers"
             className="rounded-full bg-msred px-5 py-2.5 text-white transition hover:bg-msredDark"
           >
-            Get a Quote
+            Careers
           </Link>
 
         </nav>

@@ -9,7 +9,7 @@ import ServicesDetail from './pages/Services/ServicesDetail'
 import Team from './pages/Team/Team';
 import PrivacyPolicy from './pages/Legal/PrivacyPolicy';
 import Terms from './pages/Legal/Terms';
-
+import Careers from './pages/Careers/Careers';
 const App = () => {
   return (
     <>
@@ -24,6 +24,7 @@ const App = () => {
         <Route path="/team" element={<Team />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/terms" element={<Terms />} />
+        <Route path="/careers" element={<Careers />} />
       </Routes>
       <Footer/>
     </BrowserRouter>
