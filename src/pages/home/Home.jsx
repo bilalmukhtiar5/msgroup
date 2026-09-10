@@ -2,8 +2,9 @@ import { useState } from "react";
 import Services, { services } from "../Services/ServicesCard";
 import VideoSection from "./VideoSection";
 import { Link } from "react-router-dom";
-
-
+import Blog from "../Blog/Blog";
+import TrustStrip from "./TrustStrip";
+import Testimonials from "./Testimonials";
 
 
 const Home = () => {
@@ -138,7 +139,8 @@ const Home = () => {
             </div>
           </div>
         </section>
-
+        <TrustStrip />
+                <Testimonials />
         {/* CATEGORY DETAILS */}
         <section className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
           <div className="mb-14 max-w-2xl">
@@ -168,13 +170,13 @@ const Home = () => {
                 Have an event, campaign or brand experience in mind?
               </h2>
             </div>
-            <button className="mt-8 rounded-full bg-white px-7 py-3.5 text-sm font-black text-msred lg:mt-0">
+            <Link to="/contact" className="mt-8 rounded-full bg-white px-7 py-3.5 text-sm font-black text-msred lg:mt-0">
               Request a Quote →
-            </button>
+            </Link>
           </div>
         </section>
       </main>
-      
+      {/* <Blog/> */}
     </div>
   );
 }

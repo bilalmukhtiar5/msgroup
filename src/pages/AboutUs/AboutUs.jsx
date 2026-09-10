@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const AboutUs = () => {
   return (
@@ -6,8 +7,8 @@ const AboutUs = () => {
 
       {/* HERO */}
       <section className="relative overflow-hidden bg-[#111] pt-32 pb-24 text-white">
-        <div className="absolute -right-32 -top-40 h-[520px] w-[520px] rounded-full bg-msred/20 blur-3xl" />
-        <div className="absolute -bottom-52 -left-32 h-[420px] w-[420px] rounded-full bg-msred/10 blur-3xl" />
+        <div className="absolute -right-32 -top-40 h-130 w-130 rounded-full bg-msred/20 blur-3xl" />
+        <div className="absolute -bottom-52 -left-32 h-105 w-105 rounded-full bg-msred/10 blur-3xl" />
 
         <div className="relative mx-auto max-w-7xl px-5 lg:px-8">
           <p className="section-kicker">
@@ -111,7 +112,7 @@ const AboutUs = () => {
 
       {/* CTA */}
       <section className="mx-auto max-w-7xl px-5 pb-24 lg:px-8">
-        <div className="overflow-hidden rounded-[2rem] bg-msred px-7 py-14 text-white sm:px-12 lg:flex lg:items-center lg:justify-between">
+        <div className="overflow-hidden rounded-4xl bg-msred px-7 py-14 text-white sm:px-12 lg:flex lg:items-center lg:justify-between">
           <div>
             <p className="text-xs font-bold uppercase tracking-[.25em] text-white/60">
               Let's work together
@@ -120,9 +121,9 @@ const AboutUs = () => {
               Ready to create something memorable?
             </h2>
           </div>
-          <button className="mt-8 rounded-full bg-white px-7 py-3.5 text-sm font-black text-msred lg:mt-0">
+          <Link to="/contact" className="mt-8 rounded-full bg-white px-7 py-3.5 text-sm font-black text-msred lg:mt-0">
             Get a Quote →
-          </button>
+          </Link>
         </div>
       </section>
 

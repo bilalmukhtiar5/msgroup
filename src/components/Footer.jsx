@@ -52,10 +52,26 @@ const Footer = () => {
           <div>
             <p className="text-sm font-semibold text-white/40">Pages</p>
             <ul className="mt-5 space-y-3 text-sm">
-              <li><a href="#about" className="text-white/70 transition-colors hover:text-white">Services</a></li>
-              <li><a href="#work" className="text-white/70 transition-colors hover:text-white">About Us</a></li>
-              <li><a href="#services" className="text-white/70 transition-colors hover:text-white">Our Team</a></li>
-              <li><a href="#contact" className="text-white/70 transition-colors hover:text-white">Contact Us</a></li>
+              <li>
+                <Link to="/services" className="text-white/70 transition-colors hover:text-white">
+  Services
+</Link>
+              </li>
+              <li>
+                <Link to="/about" className="text-white/70 transition-colors hover:text-white">About Us</Link>
+              </li>
+              <li>
+                <Link to="/team" className="text-white/70 transition-colors hover:text-white">Our Team</Link>
+              </li>
+              <li>
+                <Link to="/contact" className="text-white/70 transition-colors hover:text-white">Contact Us</Link>
+              </li>
+              <li>
+                <Link to="/careers" className="text-white/70 transition-colors hover:text-white">Careers</Link>
+              </li>
+              <li>
+                <Link to="/blog" className="text-white/70 transition-colors hover:text-white">Blog</Link>
+              </li>
             </ul>
           </div>
 

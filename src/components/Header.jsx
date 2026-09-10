@@ -64,6 +64,9 @@ function Header() {
           <Link to="/team" className="nav-link">
             Team
           </Link>
+          <Link to="/portfolio" className="nav-link">
+            Portfolio
+          </Link>
           {/* Quote Button */}
           <Link
             to="/careers"

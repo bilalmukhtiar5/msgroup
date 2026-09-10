@@ -10,6 +10,9 @@ import Team from './pages/Team/Team';
 import PrivacyPolicy from './pages/Legal/PrivacyPolicy';
 import Terms from './pages/Legal/Terms';
 import Careers from './pages/Careers/Careers';
+import Blog from './pages/Blog/Blog';
+import Portfolio from './pages/home/Portfolio';
+
 const App = () => {
   return (
     <>
@@ -25,6 +28,8 @@ const App = () => {
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/careers" element={<Careers />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/portfolio" element={<Portfolio />} />
       </Routes>
       <Footer/>
     </BrowserRouter>
