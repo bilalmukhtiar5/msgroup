@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { FaFacebook } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -48,12 +50,12 @@ const Footer = () => {
 
           {/* Navigation */}
           <div>
-            <p className="text-sm font-semibold text-white/40">Studio</p>
+            <p className="text-sm font-semibold text-white/40">Pages</p>
             <ul className="mt-5 space-y-3 text-sm">
-              <li><a href="#about" className="text-white/70 transition-colors hover:text-white">About Us</a></li>
-              <li><a href="#work" className="text-white/70 transition-colors hover:text-white">Our Work</a></li>
-              <li><a href="#services" className="text-white/70 transition-colors hover:text-white">Services</a></li>
-              <li><a href="#contact" className="text-white/70 transition-colors hover:text-white">Contact</a></li>
+              <li><a href="#about" className="text-white/70 transition-colors hover:text-white">Services</a></li>
+              <li><a href="#work" className="text-white/70 transition-colors hover:text-white">About Us</a></li>
+              <li><a href="#services" className="text-white/70 transition-colors hover:text-white">Our Team</a></li>
+              <li><a href="#contact" className="text-white/70 transition-colors hover:text-white">Contact Us</a></li>
             </ul>
           </div>
 
@@ -76,8 +78,12 @@ const Footer = () => {
               <li>Office TF#279 Deans Trade Center Peshawar Cantt Saddar, Pakistan</li>
               <li className="flex gap-4 pt-2">
                 
-                <a href="#" aria-label="Instagram" className="transition-colors hover:text-msred">Instagram</a>
-                <a href="#" aria-label="LinkedIn" className="transition-colors hover:text-msred">LinkedIn</a>
+                <a href="#" aria-label="Instagram" className="transition-colors hover:text-msred">
+                  <FaFacebook />
+                </a>
+                <a href="#" aria-label="LinkedIn" className="transition-colors hover:text-msred">
+                  <FaInstagram />
+                </a>
               </li>
             </ul>
           </div>

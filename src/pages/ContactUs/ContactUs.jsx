@@ -33,8 +33,7 @@ const ContactUs = () => {
         <span className="block text-msred">a conversation.</span>
       </h1>
       <p className="mt-5 text-base leading-7 text-black/60 sm:text-lg">
-        Event, brand experience ya production ke liye kuch plan kar rahe
-        hain? Neeche form fill karein ya seedha email/call karein.
+        Planning an event, brand experience, or production? Fill out the form below, or get in touch with us directly by email or phone.
       </p>
     </div>
 
@@ -94,7 +93,7 @@ const ContactUs = () => {
             required
             rows={5}
             className="mt-2 w-full rounded-xl border border-black/15 bg-white px-4 py-3 text-black outline-none transition focus:border-msred"
-            placeholder="Apna event ya idea batayein..."
+            placeholder="Write Your Message Idea or any suggestion..."
           />
         </div>
 
@@ -110,15 +109,15 @@ const ContactUs = () => {
       <div className="lg:col-span-2 space-y-8">
         <div className="border-l border-msred/50 pl-5">
           <p className="text-sm text-black/40">Email</p>
-          <p className="mt-1 text-lg font-semibold">hello@msgroup.com</p>
+          <p className="mt-1 text-lg font-semibold">info@msgroup.com</p>
         </div>
         <div className="border-l border-msred/50 pl-5">
           <p className="text-sm text-black/40">Phone</p>
-          <p className="mt-1 text-lg font-semibold">+92 300 1234567</p>
+          <p className="mt-1 text-lg font-semibold">+923450757518</p>
         </div>
         <div className="border-l border-msred/50 pl-5">
           <p className="text-sm text-black/40">Location</p>
-          <p className="mt-1 text-lg font-semibold">Peshawar, Pakistan</p>
+          <p className="mt-1 text-lg font-semibold">Office TF#279 Deans Trade Center Peshawar Cantt Saddar, Pakistan</p>
         </div>
       </div>
 
