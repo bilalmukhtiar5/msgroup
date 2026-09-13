@@ -15,7 +15,8 @@ const services = [
       "Dealer Conferences", "Employee Engagement Events", "Government & Institutional Events",
       "Sports & Entertainment Events", "Weddings & Celebrations"
     ],
-    icon: "✦"
+    icon: "✦",
+    image: "/service-cards/events.jpg",
   },
   {
     id: "activation",
@@ -28,7 +29,8 @@ const services = [
       "Roadshows", "Pop-Up Activations", "Campus Activations",
       "National & Multi-City Campaigns"
     ],
-    icon: "◎"
+    icon: "◎",
+    image: "/service-cards/brand-activation.jpg",
   },
   {
     id: "staffing",
@@ -40,7 +42,8 @@ const services = [
       "Sales Promoters", "Event Coordinators", "Registration Staff",
       "Promotional Teams", "Influencer & Celebrity Management"
     ],
-    icon: "◉"
+    icon: "◉",
+    image: "/service-cards/staffing.jpg",
   },
   {
     id: "exhibitions",
@@ -52,7 +55,8 @@ const services = [
       "Mall Kiosks & Pop-Up Stores", "Product Display Units", "Retail Displays",
       "Brand Installations", "Stage & Event Structures", "Set Design", "Branded Counters"
     ],
-    icon: "◇"
+    icon: "◇",
+    image: "/service-cards/exhibitions.jpg",
   },
   {
     id: "printing",
@@ -65,7 +69,8 @@ const services = [
       "Shop & Retail Branding", "Vehicle Branding", "Outdoor Branding",
       "OOH Advertising", "Media Walls", "Corporate Branding", "Promotional Materials"
     ],
-    icon: "▣"
+    icon: "▣",
+    image: "/service-cards/printing.jpg"
   },
   {
     id: "production",
@@ -79,7 +84,8 @@ const services = [
       "Event Photography & Videography", "Drone Coverage", "Video Production",
       "Highlight & Same-Day Event Content"
     ],
-    icon: "▶"
+    icon: "▶",
+    image: "/service-cards/production-media.jpg"
   },
   {
     id: "decor",
@@ -91,7 +97,8 @@ const services = [
       "Venue Styling", "Furniture & Event Props", "Corporate & Event Catering",
       "VIP Hospitality", "Guest & Registration Management", "Venue Management"
     ],
-    icon: "❖"
+    icon: "❖",
+    image: "/service-cards/decor.jpg"
   },
   {
     id: "gifting",
@@ -103,7 +110,8 @@ const services = [
       "Branded Apparel", "T-Shirts & Caps", "Mugs & Pens", "Diaries & Power Banks",
       "USB Drives & Gift Boxes", "Awards, Trophies, Certificates & Plaques"
     ],
-    icon: "□"
+    icon: "□",
+    image: "/service-cards/gifting.jpg"
   }
 ];
 
@@ -134,27 +142,48 @@ const Services = () => {
   </p>
 </div>
 
-        <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-          {services.map((service) => (
-            <button
-              key={service.id}
-              onClick={() => goTo(service.id)}
-              className="group min-h-[310px] rounded-3xl border border-black/10 bg-white p-6 text-left shadow-sm transition duration-300 hover:-translate-y-1 hover:border-msred/30 hover:shadow-soft"
-            >
-              <div className="flex items-start justify-between">
-                <span className="text-xs font-black tracking-widest text-black/30">{service.number}</span>
-                <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-msred/10 text-xl text-msred transition group-hover:bg-msred group-hover:text-white">
-                  {service.icon}
-                </span>
-              </div>
-              <h3 className="mt-12 text-xl font-black leading-tight">{service.title}</h3>
-              <p className="mt-3 text-sm leading-6 text-black/50">{service.short}</p>
-              <span className="mt-6 inline-flex items-center gap-2 text-xs font-black uppercase tracking-wider text-msred">
-                View details <span className="transition group-hover:translate-x-1">→</span>
-              </span>
-            </button>
-          ))}
+<div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+  {services.map((service) => (
+    <button
+      key={service.id}
+      onClick={() => goTo(service.id)}
+      className="group relative min-h-77.5 overflow-hidden rounded-3xl border border-black/10 text-left transition duration-300 hover:-translate-y-1"
+    >
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center transition duration-500 group-hover:scale-110"
+        style={{ backgroundImage: `url(${service.image})` }}
+      />
+
+      {/* Dark overlay taake text readable rahe */}
+      <div className="absolute inset-0 bg-linear-to-t from-black/85 via-black/50 to-black/20" />
+
+      {/* Content (image ke upar) */}
+      <div className="relative z-10 flex h-full flex-col p-6">
+        <div className="flex items-start justify-between">
+          <span className="text-xs font-black tracking-widest text-white/50">
+            {service.number}
+          </span>
+          <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-white/10 text-xl text-white backdrop-blur-sm transition group-hover:bg-msred">
+            {service.icon}
+          </span>
         </div>
+
+        <h3 className="mt-12 text-xl font-black leading-tight text-white">
+          {service.title}
+        </h3>
+        <p className="mt-3 text-sm leading-6 text-white/70">
+          {service.short}
+        </p>
+
+        <span className="mt-auto inline-flex items-center gap-2 pt-6 text-xs font-black uppercase tracking-wider text-msred">
+          View details
+          <span className="transition group-hover:translate-x-1">→</span>
+        </span>
+      </div>
+    </button>
+  ))}
+</div>
       </section>
     </div>
   )
