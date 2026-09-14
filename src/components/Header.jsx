@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { FaChevronDown } from "react-icons/fa6";
 
 function Header() {
+  const [aboutDropdown, setAboutDropdown] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
   const goTo = (id) => {
@@ -48,12 +50,44 @@ function Header() {
             Services
           </Link>
 
-          <Link
-            to="/about"
-            className="nav-link"
-          >
-            About
-          </Link>
+          <div
+  className="relative"
+  onMouseEnter={() => setAboutDropdown(true)}
+  onMouseLeave={() => setAboutDropdown(false)}
+>
+  <button className="nav-link flex items-center gap-1">
+    About
+    <FaChevronDown
+      size={14}
+      className={`transition-transform duration-200 ${
+        aboutDropdown ? "rotate-180" : ""
+      }`}
+    />
+  </button>
+
+  {aboutDropdown && (
+    <div className="absolute left-0 top-full w-56 rounded-2xl border border-black/10 bg-white p-2 shadow-xl">
+      <Link
+        to="/about"
+        className="block rounded-xl px-4 py-3 text-sm font-semibold text-black/70 transition hover:bg-black/[.04] hover:text-msred"
+      >
+        About Us
+      </Link>
+      <Link
+        to="/founder"
+        className="block rounded-xl px-4 py-3 text-sm font-semibold text-black/70 transition hover:bg-black/[.04] hover:text-msred"
+      >
+        Our Founder
+      </Link>
+      <Link
+        to="/team"
+        className="block rounded-xl px-4 py-3 text-sm font-semibold text-black/70 transition hover:bg-black/[.04] hover:text-msred"
+      >
+        Our Team
+      </Link>
+    </div>
+  )}
+</div>
 
           <Link
             to="/contact"
@@ -61,9 +95,9 @@ function Header() {
           >
             Contact Us
           </Link>
-          <Link to="/team" className="nav-link">
+          {/* <Link to="/team" className="nav-link">
             Team
-          </Link>
+          </Link> */}
           <Link to="/portfolio" className="nav-link">
             Portfolio
           </Link>

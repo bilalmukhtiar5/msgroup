@@ -12,6 +12,7 @@ import Terms from './pages/Legal/Terms';
 import Careers from './pages/Careers/Careers';
 import Blog from './pages/Blog/Blog';
 import Portfolio from './pages/home/Portfolio';
+import Founder from './pages/Founder/Founder';
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
         <Route path="/careers" element={<Careers />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/founder" element={<Founder />} />
       </Routes>
       <Footer/>
     </BrowserRouter>
