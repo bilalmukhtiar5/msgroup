@@ -4,6 +4,7 @@ import { FaChevronDown } from "react-icons/fa6";
 
 function Header() {
   const [aboutDropdown, setAboutDropdown] = useState(false);
+  const [mobileAboutOpen, setMobileAboutOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
   const goTo = (id) => {
@@ -36,72 +37,61 @@ function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden items-center gap-9 text-sm font-semibold lg:flex">
 
-          <Link
-            to="/"
-            className="nav-link"
-          >
+          <Link to="/" className="nav-link">
             Home
           </Link>
 
-          <Link
-            to="/services"
-            className="nav-link"
-          >
+          <Link to="/services" className="nav-link">
             Services
           </Link>
 
           <div
-  className="relative"
-  onMouseEnter={() => setAboutDropdown(true)}
-  onMouseLeave={() => setAboutDropdown(false)}
->
-  <button className="nav-link flex items-center gap-1">
-    About
-    <FaChevronDown
-      size={14}
-      className={`transition-transform duration-200 ${
-        aboutDropdown ? "rotate-180" : ""
-      }`}
-    />
-  </button>
-
-  {aboutDropdown && (
-    <div className="absolute left-0 top-full w-56 rounded-2xl border border-black/10 bg-white p-2 shadow-xl">
-      <Link
-        to="/about"
-        className="block rounded-xl px-4 py-3 text-sm font-semibold text-black/70 transition hover:bg-black/[.04] hover:text-msred"
-      >
-        About Us
-      </Link>
-      <Link
-        to="/founder"
-        className="block rounded-xl px-4 py-3 text-sm font-semibold text-black/70 transition hover:bg-black/[.04] hover:text-msred"
-      >
-        Our Founder
-      </Link>
-      <Link
-        to="/team"
-        className="block rounded-xl px-4 py-3 text-sm font-semibold text-black/70 transition hover:bg-black/[.04] hover:text-msred"
-      >
-        Our Team
-      </Link>
-    </div>
-  )}
-</div>
-
-          <Link
-            to="/contact"
-            className="nav-link"
+            className="relative"
+            onMouseEnter={() => setAboutDropdown(true)}
+            onMouseLeave={() => setAboutDropdown(false)}
           >
+            <button className="nav-link flex items-center gap-1">
+              About
+              <FaChevronDown
+                size={14}
+                className={`transition-transform duration-200 ${
+                  aboutDropdown ? "rotate-180" : ""
+                }`}
+              />
+            </button>
+
+            {aboutDropdown && (
+              <div className="absolute left-0 top-full w-56 rounded-2xl border border-black/10 bg-white p-2 shadow-xl">
+                <Link
+                  to="/about"
+                  className="block rounded-xl px-4 py-3 text-sm font-semibold text-black/70 transition hover:bg-black/[.04] hover:text-msred"
+                >
+                  About Us
+                </Link>
+                <Link
+                  to="/founder"
+                  className="block rounded-xl px-4 py-3 text-sm font-semibold text-black/70 transition hover:bg-black/[.04] hover:text-msred"
+                >
+                  Our Founder
+                </Link>
+                <Link
+                  to="/team"
+                  className="block rounded-xl px-4 py-3 text-sm font-semibold text-black/70 transition hover:bg-black/[.04] hover:text-msred"
+                >
+                  Our Team
+                </Link>
+              </div>
+            )}
+          </div>
+
+          <Link to="/contact" className="nav-link">
             Contact Us
           </Link>
-          {/* <Link to="/team" className="nav-link">
-            Team
-          </Link> */}
+
           <Link to="/portfolio" className="nav-link">
             Portfolio
           </Link>
-          {/* Quote Button */}
+
           <Link
             to="/careers"
             className="rounded-full bg-msred px-5 py-2.5 text-white transition hover:bg-msredDark"
@@ -128,39 +118,86 @@ function Header() {
 
           <div className="flex flex-col gap-4 text-sm font-semibold">
 
-            <button
-              onClick={() => goTo("home")}
+            <Link
+              to="/"
+              onClick={() => setMenuOpen(false)}
               className="text-left"
             >
               Home
-            </button>
+            </Link>
 
-            <button
-              onClick={() => goTo("services")}
+            <Link
+              to="/services"
+              onClick={() => setMenuOpen(false)}
               className="text-left"
             >
               Services
-            </button>
+            </Link>
 
-            <button
-              onClick={() => goTo("about")}
-              className="text-left"
-            >
-              About
-            </button>
+            {/* Mobile About Dropdown */}
+            <div>
+              <button
+                onClick={() => setMobileAboutOpen(!mobileAboutOpen)}
+                className="flex w-full items-center justify-between text-left"
+              >
+                About
+                <FaChevronDown
+                  size={14}
+                  className={`transition-transform duration-200 ${
+                    mobileAboutOpen ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
 
-            <button
-              onClick={() => goTo("contact")}
-              className="text-left"
-            >
-              Contact
-            </button>
+              {mobileAboutOpen && (
+                <div className="mt-3 flex flex-col gap-3 border-l border-black/10 pl-4">
+                  <Link
+                    to="/about"
+                    onClick={() => setMenuOpen(false)}
+                    className="text-black/60"
+                  >
+                    About Us
+                  </Link>
+                  <Link
+                    to="/founder"
+                    onClick={() => setMenuOpen(false)}
+                    className="text-black/60"
+                  >
+                    Our Founder
+                  </Link>
+                  <Link
+                    to="/team"
+                    onClick={() => setMenuOpen(false)}
+                    className="text-black/60"
+                  >
+                    Our Team
+                  </Link>
+                </div>
+              )}
+            </div>
 
             <Link
               to="/contact"
+              onClick={() => setMenuOpen(false)}
+              className="text-left"
+            >
+              Contact Us
+            </Link>
+
+            <Link
+              to="/portfolio"
+              onClick={() => setMenuOpen(false)}
+              className="text-left"
+            >
+              Portfolio
+            </Link>
+
+            <Link
+              to="/careers"
+              onClick={() => setMenuOpen(false)}
               className="w-fit rounded-full bg-msred px-5 py-2.5 text-white"
             >
-              Get a Quote
+              Careers
             </Link>
 
           </div>
