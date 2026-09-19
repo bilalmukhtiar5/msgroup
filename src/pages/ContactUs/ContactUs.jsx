@@ -33,7 +33,7 @@ const ContactUs = () => {
         <span className="block text-msred">a conversation.</span>
       </h1>
       <p className="mt-5 text-base leading-7 text-black/60 sm:text-lg">
-        Planning an event, brand experience, or production? Fill out the form below, or get in touch with us directly by email or phone.
+        Planning an event, brand experience, or production? Fill out the form below, or get in touch with our team directly by email or phone.
       </p>
     </div>
 

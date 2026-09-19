@@ -10,7 +10,7 @@ const Founder = () => {
 
           {/* Image */}
           <div className="relative">
-            <div className="aspect-[4/5] overflow-hidden rounded-[2rem] bg-[#111]">
+            <div className="aspect-4/5 overflow-hidden rounded-4xl bg-[#111]">
               <img
                 src="/founder/founder.jpg"
                 alt="Founder Name"
@@ -33,7 +33,7 @@ const Founder = () => {
               Founder Full Name
             </h1>
             <p className="mt-2 text-lg font-semibold text-msred">
-              Founder & CEO, MS Group
+              Founder, MS Group
             </p>
             <p className="mt-6 text-base leading-7 text-black/60">
               With over a decade of experience in event management and brand
@@ -45,7 +45,7 @@ const Founder = () => {
         </div>
 
         {/* QUOTE */}
-        <div className="mt-20 rounded-[2rem] bg-[#111] px-8 py-14 text-center text-white sm:px-16">
+        <div className="mt-20 rounded-4xl bg-[#111] px-8 py-14 text-center text-white sm:px-16">
           <span className="text-5xl font-black leading-none text-msred">"</span>
           <p className="mx-auto mt-4 max-w-2xl text-2xl font-black leading-snug sm:text-3xl">
             We don't just plan events. We build moments that people carry
@@ -59,23 +59,27 @@ const Founder = () => {
           <div>
             <p className="section-kicker">The Journey</p>
             <h2 className="mt-3 text-3xl font-black tracking-tight sm:text-4xl">
-              From a small team
-              <span className="text-msred"> to a full-service group.</span>
+              From a Small Team
+              <span className="text-msred"> to a Full-Service Group.</span>
             </h2>
           </div>
           <div className="space-y-5 text-black/60 leading-7">
             <p>
-              MS Group started with a handful of people and a simple goal —
-              deliver events that clients wouldn't forget. What began as a
-              small event management setup has since grown into a
-              full-service company spanning experiential marketing,
-              production, fabrication, staffing and branding.
+              MS Group began with a small team and a simple goal—to create 
+              meaningful events and experiences that people remember.
+              What started as an event management business has grown into a 
+              full-service group offering experiential marketing, event production, 
+              fabrication, promotional staffing, media, and branding solutions.
             </p>
             <p>
-              Under [Founder Name]'s leadership, MS Group has worked with
-              corporates, government bodies and leading brands across
-              Pakistan, always with the same principle — creativity backed
-              by flawless execution.
+              Founded under the vision and leadership of <b>Late Muhammad Jehanzeb, 
+              MS Group Limited</b>, has continued to grow through a commitment to 
+              creativity, professionalism, quality, and strong execution.
+            </p>
+            <p>
+              Today, that vision continues through a growing team and expanding 
+              capabilities, serving corporate clients, government and institutional 
+              organizations, and leading brands across Pakistan. Building on a Legacy. Creating the Future.
             </p>
           </div>
         </div>
@@ -98,19 +102,7 @@ const Founder = () => {
         </div>
 
         {/* CTA */}
-        {/* <div className="mt-20 overflow-hidden rounded-[2rem] bg-msred px-7 py-14 text-white sm:px-12 lg:flex lg:items-center lg:justify-between">
-          <div>
-            <p className="text-xs font-bold uppercase tracking-[.25em] text-white/60">
-              Let's connect
-            </p>
-            <h2 className="mt-3 max-w-2xl text-3xl font-black tracking-tight sm:text-4xl">
-              Want to work directly with our founder?
-            </h2>
-          </div>
-          <button className="mt-8 rounded-full bg-white px-7 py-3.5 text-sm font-black text-msred lg:mt-0">
-            Get in Touch →
-          </button>
-        </div> */}
+       
 
       </div>
     </div>

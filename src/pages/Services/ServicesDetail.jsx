@@ -66,7 +66,7 @@ const ServicesDetail = () => {
                         className="flex items-start gap-3 border-b border-black/5 py-3 text-sm"
                       >
                         <span className="mt-0.5 font-bold text-msred">✓</span>
-                        <span className="text-black/70">{item}</span>
+                        <span className="text-black/70 font-bold">{item}</span>
                       </div>
                     ))}
                   </div>

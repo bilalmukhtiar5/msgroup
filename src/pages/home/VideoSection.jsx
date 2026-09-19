@@ -9,7 +9,7 @@ const VideoSection = () => {
     <div className="mb-12 max-w-3xl">
       <p className="section-kicker">
         <span className="mr-3 inline-block h-px w-9 bg-msred align-middle" />
-        Experience MS Group
+        Experience MS Group Limited
       </p>
 
       <h2 className="mt-4 text-4xl font-black tracking-tight sm:text-5xl lg:text-6xl">
@@ -20,9 +20,16 @@ const VideoSection = () => {
       </h2>
 
       <p className="mt-5 max-w-2xl text-base leading-7 text-white/55 sm:text-lg">
-        From concept to execution, discover how MS Group brings
-        creativity, production and unforgettable experiences together.
+        From concept to execution, MS Group Limited brings together creativity, 
+        strategic thinking, production excellence, and seamless execution to 
+        deliver experiences that people remember.
       </p>
+      <button
+                  onClick={() => goTo("services")}
+                  className="mt-2 rounded-full bg-msred px-7 py-3.5 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:bg-msredDark"
+                >
+                  Discover What We Create
+                </button>
     </div>
 
     {/* Video */}

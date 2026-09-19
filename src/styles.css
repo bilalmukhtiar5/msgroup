@@ -1,4 +1,26 @@
 @import "tailwindcss";
+:root {
+  --animate-marquee-left: marqueeLeft 40s linear infinite;
+  --animate-marquee-right: marqueeRight 40s linear infinite;
+}
+
+.animate-marquee-left {
+  animation: var(--animate-marquee-left);
+}
+
+.animate-marquee-right {
+  animation: var(--animate-marquee-right);
+}
+
+@keyframes marqueeLeft {
+  from { transform: translateX(0%); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes marqueeRight {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0%); }
+}
 
 html {
   scroll-behavior: smooth;

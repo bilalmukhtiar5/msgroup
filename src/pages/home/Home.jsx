@@ -41,8 +41,9 @@ const Home = () => {
               </h1>
 
               <p className="mt-7 max-w-xl text-base leading-7 text-white/65 sm:text-lg">
-                MS Group delivers integrated event management, brand activation,
-                production, fabrication, staffing and corporate branding solutions.
+                MS Group Limited delivers integrated solutions across event management, 
+                brand activations, event production, fabrication, promotional staffing, 
+                and corporate branding.
               </p>
 
               <div className="mt-9 flex flex-wrap gap-3">
@@ -50,13 +51,13 @@ const Home = () => {
                   onClick={() => goTo("services")}
                   className="rounded-full bg-msred px-7 py-3.5 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:bg-msredDark"
                 >
-                  Explore Services
+                  Plan Your Event
                 </button>
                 <button
                   onClick={() => goTo("contact")}
                   className="rounded-full border border-white/25 px-7 py-3.5 text-sm font-bold transition hover:bg-white hover:text-black"
                 >
-                  Start a Project
+                  Talk to Our Team 
                 </button>
               </div>
 
@@ -89,13 +90,14 @@ const Home = () => {
                     <p className="text-sm uppercase tracking-[.25em] text-msred">Beyond the ordinary</p>
                     <p className="mt-3 text-4xl font-black leading-tight sm:text-5xl">
                       Events.
+                      <br />Experiences.
                       <br />Brands.
                       <br />Impact.
                     </p>
                   </div>
 
                   <div className="grid grid-cols-2 gap-2">
-                    {["EVENTS", "ACTIVATION", "PRODUCTION", "BRANDING"].map((x) => (
+                    {["ACTIVATION", "PRODUCTION", "BRANDING", "From Vision to Experience"].map((x) => (
                       <div key={x} className="border border-white/10 bg-white/04 px-3 py-3 text-[10px] font-bold tracking-[.16em] text-white/60">
                         {x}
                       </div>
@@ -125,9 +127,7 @@ const Home = () => {
             </div>
             <div className="space-y-6 text-white/60 leading-7">
               <p>
-                We combine event expertise, experiential marketing, production,
-                fabrication, staffing, media and branding to make execution simpler
-                for our clients.
+                We bring together event expertise, experiential marketing, production, fabrication, staffing, media, and branding less than one roof—making execution simpler, more efficient, and more effective for our clients.
               </p>
               <div className="grid gap-3 sm:grid-cols-2">
                 {["Creative execution", "End-to-end production", "Professional teams", "Brand-focused delivery"].map((x) => (
@@ -139,6 +139,7 @@ const Home = () => {
             </div>
           </div>
         </section>
+       
         <TrustStrip />
                 <Testimonials />
         {/* CATEGORY DETAILS */}

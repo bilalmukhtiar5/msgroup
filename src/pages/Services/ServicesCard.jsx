@@ -137,8 +137,10 @@ const Services = () => {
   </h2>
 
   <p className="mt-5 max-w-2xl leading-7 text-black/55">
-    From concept to execution, MS Group brings strategy, creativity,
-    production and people together under one roof.
+    From <b>Concept to Execution</b>, MS Group Limited brings together <b>strategy,
+    creativity, production,</b> and people under one roof—delivering seamless 
+    solutions for <b>events, brand activations, experiential marketing, corporate 
+    experiences, and beyond.</b>
   </p>
 </div>
 
