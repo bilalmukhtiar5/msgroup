@@ -112,9 +112,10 @@ const Home = () => {
           </div>
         </section>
 
-        
         <VideoSection/>
+        
         <Services />
+
         {/* ABOUT STRIP */}
         <section id="about" className="bg-[#111] text-white">
           <div className="mx-auto grid max-w-7xl gap-10 px-5 py-24 lg:grid-cols-2 lg:px-8">
@@ -139,9 +140,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-       
-        <TrustStrip />
-                <Testimonials />
+                
         {/* CATEGORY DETAILS */}
         <section className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
           <div className="mb-14 max-w-2xl">
@@ -161,7 +160,8 @@ const Home = () => {
             </Link>
           </div>
         </section>
-
+                <Testimonials />
+                <TrustStrip />
         {/* CTA */}
         <section id="contact" className="mx-auto max-w-7xl px-5 pb-24 lg:px-8">
           <div className="overflow-hidden rounded-4xl bg-msred px-7 py-14 text-white sm:px-12 lg:flex lg:items-center lg:justify-between">

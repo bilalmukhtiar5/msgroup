@@ -1,7 +1,7 @@
 //import React from 'react'
 import { useNavigate } from 'react-router-dom'
-
-
+import event from "../../../dist/service-cards/events.webp"
+import brandActivation from "../../../dist/service-cards/brand-activation.jpg"
 
 const services = [
   {
@@ -16,7 +16,7 @@ const services = [
       "Sports & Entertainment Events", "Weddings & Celebrations"
     ],
     icon: "✦",
-    image: "/service-cards/events.jpg",
+    image: event,
   },
   {
     id: "activation",
@@ -30,7 +30,7 @@ const services = [
       "National & Multi-City Campaigns"
     ],
     icon: "◎",
-    image: "/service-cards/brand-activation.jpg",
+    image: brandActivation,
   },
   {
     id: "staffing",
