@@ -41,7 +41,7 @@ const Testimonials = () => {
           {testimonials.map((t) => (
             <div
               key={t.name}
-              className="flex flex-col rounded-3xl border border-white/10 bg-white/[.03] p-7 sm:p-8"
+              className="flex flex-col rounded-3xl border border-white/10 bg-white/3 p-7 sm:p-8"
             >
               <span className="text-4xl font-black leading-none text-msred">"</span>
               <p className="mt-4 flex-1 text-sm leading-6 text-white/70">

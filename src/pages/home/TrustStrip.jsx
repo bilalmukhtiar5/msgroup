@@ -56,54 +56,67 @@ const clientsRow2 = [
 
 const TrustStrip = () => {
   return (
-    <section className="border-y border-black/10 bg-[#faf9f9] py-14">
+    <section className="border-y border-black/10 bg-[#faf9f9] py-8">
+
+      {/* Heading */}
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
-        <p className="text-center text-xl font-black uppercase tracking-[.25em] text-black/40">
+        <p className="text-center text-lg font-black uppercase tracking-[.2em] text-black/40">
           Trusted by leading brands
         </p>
       </div>
 
-      {/* Row 1 - moves left */}
-      <div className="mt-10 overflow-hidden">
-        <div className="flex w-max animate-marquee-left gap-16">
+      {/* Row 1 */}
+      <div className="mt-6 overflow-hidden">
+        <div className="flex w-max animate-marquee-left gap-8">
+
           {[...clientsRow1, ...clientsRow1].map((client, index) => (
             <div
               key={index}
-              className="flex h-40 w-44 shrink-0 flex-col items-center justify-center gap-3 transition duration-300"
+              className="flex h-28 w-32 shrink-0 flex-col items-center justify-center gap-2"
             >
-              <img
-                src={client.logo}
-                alt={client.name}
-                className="h-16 w-auto object-contain"
-              />
-              <span className="text-sm font-semibold text-black/60">
+              <div className="flex h-12 w-24 items-center justify-center">
+                <img
+                  src={client.logo}
+                  alt={client.name}
+                  className="grayscale opacity-70 transition duration-300 hover:opacity-100 hover:grayscale-0"
+                />
+              </div>
+
+              <span className="text-center text-xs font-semibold text-black/60">
                 {client.name}
               </span>
             </div>
           ))}
+
         </div>
       </div>
 
-      {/* Row 2 - moves right (reverse) */}
-      <div className="mt-8 overflow-hidden">
-        <div className="flex w-max animate-marquee-right gap-16">
+      {/* Row 2 */}
+      <div className="mt-3 overflow-hidden">
+        <div className="flex w-max animate-marquee-right gap-8">
+
           {[...clientsRow2, ...clientsRow2].map((client, index) => (
             <div
               key={index}
-              className="flex h-40 w-44 shrink-0 flex-col items-center justify-center gap-3 transition duration-300"
+              className="flex h-28 w-32 shrink-0 flex-col items-center justify-center gap-2"
             >
-              <img
-                src={client.logo}
-                alt={client.name}
-                className="h-16 w-auto object-contain"
-              />
-              <span className="text-sm font-semibold text-black/60">
+              <div className="flex h-12 w-24 items-center justify-center">
+                <img
+                  src={client.logo}
+                  alt={client.name}
+                  className="max-h-14 max-w-28 object-contain grayscale opacity-70 transition duration-300 hover:opacity-100 hover:grayscale-0"
+                />
+              </div>
+
+              <span className="text-center text-xs font-semibold text-black/60">
                 {client.name}
               </span>
             </div>
           ))}
+
         </div>
       </div>
+
     </section>
   )
 }
@@ -115,19 +128,19 @@ export default TrustStrip
 // import image2 from "../../../dist/brand-icons/tourism.webp"
 // import image3 from "../../../dist/brand-icons/national-foods.webp"
 // import image4 from "../../../dist/brand-icons/suntrix.webp"
-// import image5 from "../../../dist/brand-icons/who.webp"
+// //import image5 from "../../../dist/brand-icons/who.webp"
 // import image6 from "../../../dist/brand-icons/PIFTAC.png"
 // import image7 from "../../../dist/brand-icons/UOP.webp"
 // import image8 from "../../../dist/brand-icons/IR.webp"
 // import image9 from "../../../dist/brand-icons/oppo.webp"
-// import image10 from "../../../dist/brand-icons/realme.webp"
+// //import image10 from "../../../dist/brand-icons/realme.webp"
 // import image11 from "../../../dist/brand-icons/butterfly.webp"
 // import image12 from "../../../dist/brand-icons/Colgate.webp"
 // import image13 from "../../../dist/brand-icons/hello-hair.webp"
 // import image14 from "../../../dist/brand-icons/dettol.webp"
 // import image15 from "../../../dist/brand-icons/shan.webp"
-// import image16 from "../../../dist/brand-icons/pepsi.webp"
-// import image17 from "../../../dist/brand-icons/unilever.webp"
+// //import image16 from "../../../dist/brand-icons/pepsi.webp"
+// //import image17 from "../../../dist/brand-icons/unilever.webp"
 
 // const clients = [
 //   { name: "Govt of KPK", logo: image1 },

@@ -30,7 +30,7 @@ function Header() {
           <img
             src="/ms-group-logo.png"
             alt="MS Group"
-            className="h-16 w-auto object-contain"
+            className="h-20 w-auto object-contain"
           />
         </Link>
 
@@ -64,19 +64,19 @@ function Header() {
               <div className="absolute left-0 top-full w-56 rounded-2xl border border-black/10 bg-white p-2 shadow-xl">
                 <Link
                   to="/about"
-                  className="block rounded-xl px-4 py-3 text-sm font-semibold text-black/70 transition hover:bg-black/[.04] hover:text-msred"
+                  className="block rounded-xl px-4 py-3 text-sm font-semibold text-black/70 transition hover:bg-black/4 hover:text-msred"
                 >
                   About Us
                 </Link>
                 <Link
                   to="/founder"
-                  className="block rounded-xl px-4 py-3 text-sm font-semibold text-black/70 transition hover:bg-black/[.04] hover:text-msred"
+                  className="block rounded-xl px-4 py-3 text-sm font-semibold text-black/70 transition hover:bg-black/4 hover:text-msred"
                 >
                   Our Founder
                 </Link>
                 <Link
                   to="/team"
-                  className="block rounded-xl px-4 py-3 text-sm font-semibold text-black/70 transition hover:bg-black/[.04] hover:text-msred"
+                  className="block rounded-xl px-4 py-3 text-sm font-semibold text-black/70 transition hover:bg-black/4 hover:text-msred"
                 >
                   Our Team
                 </Link>

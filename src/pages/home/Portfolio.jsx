@@ -60,7 +60,7 @@ const Portfolio = () => {
         </div>
 
         {/* Gallery Grid */}
-        <div className="mt-10 columns-1 gap-5 sm:columns-2 lg:columns-3 [&>*]:mb-5">
+        <div className="mt-10 columns-1 gap-5 sm:columns-2 lg:columns-3 *:mb-5">
           {filtered.map((item) => (
             <div
               key={item.id}
@@ -71,7 +71,7 @@ const Portfolio = () => {
                 alt={item.title}
                 className="w-full object-cover transition duration-500 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-black/0" />
+              <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/0 to-black/0" />
               <div className="absolute bottom-5 left-5 right-5">
                 <p className="text-xs font-bold uppercase tracking-wider text-msred">
                   {item.category}
