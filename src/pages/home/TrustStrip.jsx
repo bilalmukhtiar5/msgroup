@@ -14,11 +14,16 @@ import image12 from "../../../dist/brand-icons/Colgate.webp"
 import image13 from "../../../dist/brand-icons/hello-hair.webp"
 import image14 from "../../../dist/brand-icons/dettol.webp"
 import image15 from "../../../dist/brand-icons/shan.webp"
-import image16 from "../../../dist/brand-icons/pepsi.webp"
-import image17 from "../../../dist/brand-icons/unilever.webp"
+import image16 from "../../../dist/brand-icons/pepsi.png"
+import image17 from "../../../dist/brand-icons/unilever.png"
+import image18 from "../../../dist/brand-icons/pso.webp"
 import image24 from "../../../dist/brand-icons/Lipton.webp"
-import image22 from "../../../dist/brand-icons/Khaadi.webp"
+import image22 from "../../../dist/brand-icons/Khaadi.png"
 import image19 from "../../../dist/brand-icons/LU.webp"
+import image21 from "../../../dist/brand-icons/lux.webp"
+import image20 from "../../../dist/brand-icons/hardees.png"
+import image23 from "../../../dist/brand-icons/bata.png"
+
 const clientsRow1 = [
   { name: "Govt of KPK", logo: image1 },
   { name: "PIFTAC", logo: image6 },
@@ -40,12 +45,12 @@ const clientsRow2 = [
   { name: "SHAN", logo: image15 },
   { name: "PEPSI", logo: image16 },
   { name: "UNILEVER", logo: image17 },
-  { name: "PSO", logo: image4 },
+  { name: "PSO", logo: image18 },
   { name: "LU", logo: image19 },
-  { name: "HARDEES", logo: image9 },
-  { name: "LUX", logo: image10 },
+  { name: "HARDEES", logo: image20 },
+  { name: "LUX", logo: image21 },
   { name: "KHAADI", logo: image22 },
-  { name: "BATA", logo: image11 },
+  { name: "BATA", logo: image23 },
   { name: "LIPTON", logo: image24 },
 ]
 

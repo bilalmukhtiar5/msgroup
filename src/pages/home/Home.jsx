@@ -163,7 +163,7 @@ const Home = () => {
                 <Testimonials />
                 <TrustStrip />
         {/* CTA */}
-        <section id="contact" className="mx-auto max-w-7xl px-5 pb-24 lg:px-8">
+        <section id="contact" className="mx-auto max-w-7xl px-5 pb-24 lg:px-8 mt-20">
           <div className="overflow-hidden rounded-4xl bg-msred px-7 py-14 text-white sm:px-12 lg:flex lg:items-center lg:justify-between">
             <div>
               <p className="text-xs font-bold uppercase tracking-[.25em] text-white/60">Let’s work together</p>
