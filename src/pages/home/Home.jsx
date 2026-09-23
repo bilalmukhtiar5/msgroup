@@ -120,7 +120,7 @@ const Home = () => {
         <section id="about" className="bg-[#111] text-white">
           <div className="mx-auto grid max-w-7xl gap-10 px-5 py-24 lg:grid-cols-2 lg:px-8">
             <div>
-              <p className="section-kicker">Why MS Group</p>
+              <p className="section-kicker">Why MS Group Limited</p>
               <h2 className="mt-3 text-4xl font-black tracking-tight sm:text-5xl">
                 One partner.
                 <span className="block text-msred">Multiple capabilities.</span>

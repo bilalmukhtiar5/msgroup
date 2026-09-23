@@ -8,7 +8,7 @@ const services = [
     id: "events",
     number: "01",
     title: "Events & Experiences",
-    short: "Corporate events, conferences, launches, celebrations and high-impact experiences.",
+    short: "Corporate events, conferences, launches, celebrations, and high-impact experiences designed with purpose and delivered with precision.",
     items: [
       "Corporate Events", "Conferences & Summits", "Seminars & Workshops",
       "Annual Meetings", "Award Ceremonies", "Gala Dinners", "Product Launches",
@@ -22,7 +22,7 @@ const services = [
     id: "activation",
     number: "02",
     title: "Brand Activation & Experiential Marketing",
-    short: "Turn brand moments into memorable customer experiences across multiple touchpoints.",
+    short: "We turn brand moments into memorable customer experiences, connecting brands with their audiences across meaningful and engaging touch points.",
     items: [
       "Brand Activations", "Product Sampling", "Product Demonstrations",
       "Consumer Engagement", "Mall & Retail Activations", "In-Store Activations",
@@ -36,7 +36,7 @@ const services = [
     id: "staffing",
     number: "03",
     title: "Promotional Staffing & Talent",
-    short: "Professional promotional teams, hosts, ambassadors and event coordination staff.",
+    short: "Professional promotional teams, hosts, ambassadors, and event support staff selected and coordinated to represent brands with confidence, professionalism, and consistency.",
     items: [
       "Female Promoters", "Brand Ambassadors", "Ushers & Hostesses",
       "Sales Promoters", "Event Coordinators", "Registration Staff",
@@ -49,7 +49,7 @@ const services = [
     id: "exhibitions",
     number: "04",
     title: "Exhibitions, Stalls & Fabrication",
-    short: "Custom exhibition environments, booths, kiosks, displays and branded structures.",
+    short: "We create custom exhibition environments, booths, kiosks, displays, and branded structures designed to attract attention and bring brand experiences to life.",
     items: [
       "Exhibition Stalls", "Custom Booths", "Trade Show Booths",
       "Mall Kiosks & Pop-Up Stores", "Product Display Units", "Retail Displays",
@@ -62,7 +62,7 @@ const services = [
     id: "printing",
     number: "05",
     title: "Printing, Branding & OOH",
-    short: "Complete visual branding, print production, signage and outdoor advertising solutions.",
+    short: "Complete visual branding, print production, signage, and outdoor advertising solutions that help brands build a strong and consistent presence across every touch point.",
     items: [
       "Digital & Large Format Printing", "Offset Printing", "Vinyl Printing & Pasting",
       "Flex & Backlit Printing", "Signage & 3D Signage", "LED Signage",
@@ -76,7 +76,7 @@ const services = [
     id: "production",
     number: "06",
     title: "Event Production & Media",
-    short: "Stage, LED, sound, lighting, AV, streaming and professional event content.",
+    short: "Complete event production solutions combining staging, LED screens, sound, lighting, AV, streaming, and professional event content to deliver impactful and technically seamless experiences.",
     items: [
       "Stage Production & Setup", "SMD, LED Screens & Video Walls",
       "Sound & Audio Systems", "Event Lighting", "Trussing & Rigging",
@@ -91,7 +91,7 @@ const services = [
     id: "decor",
     number: "07",
     title: "Event Décor, Hospitality & Venue Management",
-    short: "Venue styling, décor, catering, hospitality and smooth guest management.",
+    short: "Complete event production solutions combining staging, LED screens, sound, lighting, AV, streaming, and professional event content to deliver impactful and technically seamless experiences.",
     items: [
       "Stage & Thematic Décor", "Corporate & Wedding Décor", "Floral & Entrance Décor",
       "Venue Styling", "Furniture & Event Props", "Corporate & Event Catering",
@@ -101,10 +101,10 @@ const services = [
     image: "/service-cards/decor.jpg"
   },
   {
-    id: "gifting",
+    id: "Corporate Gifting & Promotional Merchandise",
     number: "08",
     title: "Corporate Gifting & Promotional Merchandise",
-    short: "Branded gifts, merchandise and executive items designed around your brand.",
+    short: "We turn brand moments into memorable customer experiences, connecting brands with their audiences across meaningful and engaging touch points.",
     items: [
       "Corporate & Executive Gifts", "Promotional Giveaways", "Customized Merchandise",
       "Branded Apparel", "T-Shirts & Caps", "Mugs & Pens", "Diaries & Power Banks",
