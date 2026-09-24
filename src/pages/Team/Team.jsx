@@ -1,11 +1,15 @@
 import React from 'react'
+import CEO from "././../../../dist/our-team/Managing-Director.webp"
+import bilal from "././../../../dist/our-team/bilal-mukhtiar.webp"
+import sundas from "././../../../dist/our-team/sundas-nayab.webp"
+import ayesha from "././../../../dist/our-team/ayesha-ishfaq.webp"
 
 const leadership = [
   {
     name: "Muhammad Shehriyar",
     role: "CEO & Managing Director",
     email: "ceo@msgroup.pk",
-    image: "/team/ceo.jpg",
+    image: CEO,
   },
 ]
 
@@ -30,7 +34,7 @@ const management = [
     name: "Sundas Nayab",
     role: "Accounts & Finance Manager",
     email: "accounts@msgroup.pk",
-    image: "/team/person3.jpg",
+    image: sundas,
     description:
       "Managing financial records, accounts coordination, payment documentation, budgeting support, and financial administration, ensuring accuracy, transparency, and efficient financial operations across MS Group Limited.",
   },
@@ -38,7 +42,7 @@ const management = [
     name: "Ayesha",
     role: "Admin & HR Manager",
     email: "admin@msgroup.pk",
-    image: "/team/person4.jpg",
+    image: ayesha,
     description:
       "Overseeing administrative operations, HR coordination, team support, employee documentation, and internal processes, ensuring an organized, professional, and efficient working environment across MS Group Limited.",
   },
@@ -54,7 +58,7 @@ const management = [
     name: "Bilal Mukhtiar",
     role: "Web Developer",
     email: "web@msgroup.pk",
-    image: "/team/person6.jpg",
+    image: bilal,
     description:
       "Responsible for developing and maintaining the company's website, ensuring a seamless user experience and implementing new features to enhance functionality.",
   },
@@ -108,7 +112,7 @@ const Team = () => {
       {/* CEO Image */}
       <div className="h-80 w-full overflow-hidden bg-black/5 lg:h-full">
         <img
-          src="/team/ceo.jpg"
+          src={CEO}
           alt="Muhammad Shehriyar"
           className="h-full w-full object-cover"
         />
@@ -190,7 +194,7 @@ const Team = () => {
     Leading each department.
   </h2>
 
-  <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+  <div className="mt-8 grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 
     {management.map((person) => (
       <div
@@ -199,13 +203,14 @@ const Team = () => {
       >
 
         {/* Profile Image */}
-        <div className="h-55 w-full overflow-hidden bg-black/5">
-          <img
-            src={person.image}
-            alt={person.name}
-            className="h-full w-full object-cover"
-          />
-        </div>
+       {/* Profile Image */}
+<div className="h-72 w-full overflow-hidden bg-black/5">
+  <img
+    src={person.image}
+    alt={person.name}
+    className="h-ful w-full object-contain"
+  />
+</div>
 
         {/* Profile Content */}
         <div className="p-5">

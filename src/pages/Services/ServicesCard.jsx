@@ -90,12 +90,12 @@ const services = [
   {
     id: "decor",
     number: "07",
-    title: "Event Décor, Hospitality & Venue Management",
-    short: "Complete event production solutions combining staging, LED screens, sound, lighting, AV, streaming, and professional event content to deliver impactful and technically seamless experiences.",
+    title: "Interior Design, Build and Execution",
+    short: "We design, manufacture, and build complete commercial spaces and outlets, combining creative concepts, quality fabrication, and professional execution from design to completion.",
     items: [
-      "Stage & Thematic Décor", "Corporate & Wedding Décor", "Floral & Entrance Décor",
-      "Venue Styling", "Furniture & Event Props", "Corporate & Event Catering",
-      "VIP Hospitality", "Guest & Registration Management", "Venue Management"
+      "Resturent and Cafe Development", "Retail & Showroom Outlets", "Mobile & Franchise Outlets",
+      "Factory & Industrial Outlets", "Office & Corporate Interiors", "Custom Furniture & Fixtures",
+      "Space Planning & 3D Visualization", "Fabrication & Manufacturing", "Renovation & Remodeling", "Complete Turnkey Solutions"
     ],
     icon: "❖",
     image: "/service-cards/decor.jpg"
