@@ -5,7 +5,7 @@ import sundas from "././../../../dist/our-team/sundas-nayab.webp"
 import ayesha from "././../../../dist/our-team/ayesha-ishfaq.webp"
 import junaid from "././../../../dist/our-team/muhammad-junaid-waris.webp"
 import munir from "././../../../dist/our-team/munir.webp"
-
+import gulalai from "././../../../dist/our-team/gulalai-khan.webp"
 const leadership = [
   {
     name: "Muhammad Shehriyar",
@@ -49,10 +49,10 @@ const management = [
       "Overseeing administrative operations, HR coordination, team support, employee documentation, and internal processes, ensuring an organized, professional, and efficient working environment across MS Group Limited.",
   },
   {
-    name: "Asia Gul",
+    name: "Gulalai Khan",
     role: "General Enquiries",
     email: "info@msgroup.pk",
-    image: "/team/person5.jpg",
+    image: gulalai,
     description:
       "Your first point of contact for general enquiries, information requests, and initial assistance, helping visitors and clients connect with the right team at MS Group Limited.",
   },
