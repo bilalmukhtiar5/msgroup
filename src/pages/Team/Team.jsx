@@ -6,6 +6,8 @@ import ayesha from "././../../../dist/our-team/ayesha-ishfaq.webp"
 import junaid from "././../../../dist/our-team/muhammad-junaid-waris.webp"
 import munir from "././../../../dist/our-team/munir.webp"
 import gulalai from "././../../../dist/our-team/gulalai-khan.webp"
+import nayyab from "././../../../dist/our-team/nayyab.webp"
+
 const leadership = [
   {
     name: "Muhammad Shehriyar",
@@ -36,12 +38,12 @@ const management = [
     name: "Sundas Nayab",
     role: "Accounts & Finance Manager",
     email: "accounts@msgroup.pk",
-    image: sundas,
+    image: nayyab,
     description:
       "Managing financial records, accounts coordination, payment documentation, budgeting support, and financial administration, ensuring accuracy, transparency, and efficient financial operations across MS Group Limited.",
   },
   {
-    name: "Ayesha",
+    name: "Ayesha Ishfaq",
     role: "Admin & HR Manager",
     email: "admin@msgroup.pk",
     image: ayesha,
@@ -127,7 +129,7 @@ const Team = () => {
               </p>
 
               <h3 className="mt-2 text-2xl font-black tracking-tight sm:text-3xl">
-                Muhammad Shehriyar
+                MUHAMMAD SHEHRIYAR
               </h3>
 
               <p className="mt-1 text-sm font-semibold text-msred">
