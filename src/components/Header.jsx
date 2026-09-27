@@ -80,6 +80,12 @@ function Header() {
                 >
                   Our Team
                 </Link>
+                <Link
+                  to="/affiliations-certifications"
+                  className="block rounded-xl px-4 py-3 text-sm font-semibold text-black/70 transition hover:bg-black/4 hover:text-msred"
+                >
+                  Our Affiliations
+                </Link>
               </div>
             )}
           </div>
@@ -171,6 +177,13 @@ function Header() {
                     className="text-black/60"
                   >
                     Our Team
+                  </Link>
+                  <Link
+                    to="/affiliations"
+                    onClick={() => setMenuOpen(false)}
+                    className="text-black/60"
+                  >
+                    Our Affiliations
                   </Link>
                 </div>
               )}

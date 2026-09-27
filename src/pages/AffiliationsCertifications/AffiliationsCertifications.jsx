@@ -1,21 +1,25 @@
 import React from 'react'
 import { Check } from 'lucide-react'
+import secp from "../../../dist/affiliation-icons/chamber.webp"
+import fbr from "../../../dist/affiliation-icons/fbr.webp"
+import kpra from "../../../dist/affiliation-icons/kpra.webp"
+import chamber from "../../../dist/affiliation-icons/secp.webp"
 
 const authorities = [
   {
-    abbr: "SECP",
+    logo: secp,
     name: "Securities and Exchange Commission of Pakistan",
   },
   {
-    abbr: "FBR",
+    logo: fbr,
     name: "Federal Board of Revenue",
   },
   {
-    abbr: "KPRA",
+    logo: kpra,
     name: "Khyber Pakhtunkhwa Revenue Authority",
   },
   {
-    abbr: "SCCI",
+    logo: chamber,
     name: "Sarhad Chamber of Commerce & Industry, Peshawar",
   },
 ]
@@ -53,20 +57,24 @@ const AffiliationsCertifications = () => {
           <p className="section-kicker">Registered Authorities & Memberships</p>
 
           <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {authorities.map((item) => (
-              <div
-                key={item.abbr}
-                className="rounded-3xl border border-black/10 bg-[#faf9f9] p-7"
-              >
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-msred/10 text-lg font-black text-msred">
-                  {item.abbr}
-                </div>
-                <p className="mt-5 text-sm leading-6 text-black/60">
-                  {item.name}
-                </p>
-              </div>
-            ))}
-          </div>
+  {authorities.map((item) => (
+    <div
+      key={item.name}
+      className="rounded-3xl border border-black/10 bg-[#faf9f9] p-7"
+    >
+      <div className="flex h-24 w-24 items-center justify-center rounded-2xl bg-white p-3 shadow-sm">
+        <img
+          src={item.logo}
+          alt={item.name}
+          className="h-full w-full object-contain"
+        />
+      </div>
+      <p className="mt-6 text-sm leading-6 text-black/60">
+        {item.name}
+      </p>
+    </div>
+  ))}
+</div>
         </div>
 
         {/* Registration Status */}
