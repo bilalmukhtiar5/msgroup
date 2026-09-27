@@ -13,6 +13,8 @@ import Careers from './pages/Careers/Careers';
 import Blog from './pages/Blog/Blog';
 import Portfolio from './pages/home/Portfolio';
 import Founder from './pages/Founder/Founder';
+import AffiliationsCertifications from './pages/AffiliationsCertifications/AffiliationsCertifications';
+import WhatsAppButton from './components/WhatsAppButton'
 
 const App = () => {
   return (
@@ -32,8 +34,10 @@ const App = () => {
         <Route path="/blog" element={<Blog />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/founder" element={<Founder />} />
+        <Route path="/affiliations-certifications" element={<AffiliationsCertifications />} />
       </Routes>
       <Footer/>
+      <WhatsAppButton />
     </BrowserRouter>
     </>
    

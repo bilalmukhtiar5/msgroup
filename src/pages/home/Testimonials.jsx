@@ -5,19 +5,19 @@ const testimonials = [
     quote:
       "MS Group handled our annual conference from start to finish without a single hiccup. Their attention to detail and on-ground coordination made our job effortless.",
     name: "Ahmed Raza",
-    role: "Marketing Director, Placeholder Co.",
+    role: "Marketing Director",
   },
   {
     quote:
       "We've worked with several event agencies before, but MS Group's creative direction and execution speed set them apart. Our product launch got exactly the buzz we wanted.",
     name: "Sana Khalid",
-    role: "Brand Manager, Placeholder Brand",
+    role: "Brand Manager",
   },
   {
     quote:
       "From fabrication to staffing, everything was managed under one roof. That alone saved us weeks of back and forth with multiple vendors.",
     name: "Bilal Farooq",
-    role: "Operations Head, Placeholder Group",
+    role: "Operations Head",
   },
 ]
 

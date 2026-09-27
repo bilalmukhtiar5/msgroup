@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import Blog from "../Blog/Blog";
 import TrustStrip from "./TrustStrip";
 import Testimonials from "./Testimonials";
-
+import AffiliationsTeaser from "./AffiliationsTeaser";
 
 const Home = () => {
    const [menuOpen, setMenuOpen] = useState(false);
@@ -160,6 +160,7 @@ const Home = () => {
             </Link>
           </div>
         </section>
+         <AffiliationsTeaser />
                 <Testimonials />
                 <TrustStrip />
         {/* CTA */}

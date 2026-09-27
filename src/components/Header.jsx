@@ -92,12 +92,12 @@ function Header() {
             Portfolio
           </Link>
 
-          <Link
+          {/* <Link
             to="/careers"
             className="rounded-full bg-msred px-5 py-2.5 text-white transition hover:bg-msredDark"
           >
             Careers
-          </Link>
+          </Link> */}
 
         </nav>
 
