@@ -7,7 +7,7 @@ import junaid from "././../../../dist/our-team/muhammad-junaid-waris.webp"
 import munir from "././../../../dist/our-team/munir.webp"
 import gulalai from "././../../../dist/our-team/gulalai-khan.webp"
 import nayyab from "././../../../dist/our-team/nayyab.webp"
-
+import asia from "././../../../dist/our-team/asia-gul.webp"
 const leadership = [
   {
     name: "Muhammad Shehriyar",
@@ -66,18 +66,16 @@ const management = [
     description:
       "Responsible for developing and maintaining the company's website, ensuring a seamless user experience and implementing new features to enhance functionality.",
   },
+  {
+    name: "Asia Gul",
+    role: "Careers & Recruitment Manager",
+    email: "careers@msgroup.pk",
+    image: asia,
+    description:
+      "Managing recruitment, career opportunities, candidate screening, interview coordination, and onboarding support, ensuring an efficient hiring process and a professional recruitment experience."
+  },
 ]
 
-// const staff = [
-//   { name: "Full Name", role: "Event Coordinator", image: "/team/staff1.jpg" },
-//   { name: "Full Name", role: "Brand Executive", image: "/team/staff2.jpg" },
-//   { name: "Full Name", role: "Production Assistant", image: "/team/staff3.jpg" },
-//   { name: "Full Name", role: "Design Executive", image: "/team/staff4.jpg" },
-//   { name: "Full Name", role: "Marketing Executive", image: "/team/staff5.jpg" },
-//   { name: "Full Name", role: "Logistics Officer", image: "/team/staff6.jpg" },
-//   { name: "Full Name", role: "Account Executive", image: "/team/staff7.jpg" },
-//   { name: "Full Name", role: "Field Coordinator", image: "/team/staff8.jpg" },
-// ]
 
 const Team = () => {
   return (
@@ -251,49 +249,7 @@ const Team = () => {
       </section>
 
 
-      {/* STAFF GRID */}
-      {/* <section className="bg-[#111] py-20 text-white">
-  <div className="mx-auto max-w-7xl px-5 lg:px-8">
-
-    <p className="section-kicker">Our Staff</p>
-
-    <h2 className="mt-3 text-3xl font-black tracking-tight sm:text-4xl">
-      The team on the ground.
-    </h2>
-
-    <div className="mt-8 grid gap-5 sm:grid-cols-3 lg:grid-cols-4">
-      {staff.map((person) => (
-        <div
-          key={person.name}
-          className="overflow-hidden rounded-2xl border border-white/10 bg-white/4"
-        >
-
-          
-          <div className="h-55 w-full overflow-hidden bg-white/6">
-            <img
-              src={person.image}
-              alt={person.name}
-              className="h-full w-full object-cover"
-            />
-          </div>
-
-          
-          <div className="p-4">
-            <h3 className="text-sm font-black">
-              {person.name}
-            </h3>
-
-            <p className="mt-1 text-xs text-white/50">
-              {person.role}
-            </p>
-          </div>
-
-        </div>
-      ))}
-    </div>
-
-  </div>
-</section> */}
+     
 
     </div>
   )

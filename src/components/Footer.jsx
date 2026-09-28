@@ -85,8 +85,8 @@ const Footer = () => {
           <div>
             <p className="text-sm font-semibold text-white/40">Contact</p>
             <ul className="mt-5 space-y-3 text-sm text-white/70">
-              <li>+923450757518</li>
-              <li>Office TF#279 Deans Trade Center Peshawar Cantt Saddar, Pakistan</li>
+              <li>+92 345 0757518</li>
+              <li>Head Office # TF-279, Deans Trade Centre, Peshawar Cantt, Saddar, Peshawar, Khyber Pakhtunkhwa, Pakistan.</li>
               <li className="flex gap-4 pt-2">
                 
                 <a href="#" aria-label="Instagram" className="transition-colors hover:text-msred">
