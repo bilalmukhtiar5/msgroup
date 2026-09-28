@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { FaFacebook } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa6";
-
+import logo from "../../dist/assets/footer-logo.webp"
 const Footer = () => {
   return (
     <footer className="bg-[#0d0d0d] text-white">
@@ -35,11 +35,9 @@ const Footer = () => {
 
           {/* Brand */}
           <div className="lg:col-span-1">
-            {/* <p className="text-2xl font-black tracking-tight">
-              MS <span className="text-msred">Group</span>
-            </p> */}
+            
             <img
-            src="/ms-group-logo.png"
+            src={logo}
             alt="MS Group"
             className="h-16 w-auto object-contain"
           />
@@ -76,6 +74,7 @@ const Footer = () => {
             <p className="text-sm font-semibold text-white/40">Services</p>
             <ul className="mt-5 space-y-3 text-sm">
               <li><span className="text-white/70">Event Production</span></li>
+
               <li><span className="text-white/70">Creative Direction</span></li>
               <li><span className="text-white/70">Brand Experiences</span></li>
               <li><span className="text-white/70">Live Broadcasts</span></li>
@@ -87,7 +86,8 @@ const Footer = () => {
             <p className="text-sm font-semibold text-white/40">Contact</p>
             <ul className="mt-5 space-y-3 text-sm text-white/70">
               <li>+92 345 0757518</li>
-              <li>Head Office # TF-279, Deans Trade Centre, Peshawar Cantt, Saddar, Peshawar, Khyber Pakhtunkhwa, Pakistan.</li>
+              <li>Head Office # TF-279, Deans Trade Centre, Peshawar Cantt, 
+                Saddar, Peshawar, Khyber Pakhtunkhwa, Pakistan.</li>
               <li className="flex gap-4 pt-2">
                 
                 <a href="https://www.facebook.com/profile.php?id=61594928870735&rdid=eEKESLF0LF4KTbaZ&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F19RwQojEkB%2F#" aria-label="Facebook" className="transition-colors hover:text-msred">

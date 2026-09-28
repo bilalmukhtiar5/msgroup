@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaChevronDown } from "react-icons/fa6";
+import logo from "../../dist/assets/ms-group-logo.png";
 
 function Header() {
   const [aboutDropdown, setAboutDropdown] = useState(false);
@@ -28,7 +29,7 @@ function Header() {
           className="flex items-center"
         >
           <img
-            src="/ms-group-logo.png"
+            src={logo}
             alt="MS Group"
             className="h-20 w-auto object-contain"
           />

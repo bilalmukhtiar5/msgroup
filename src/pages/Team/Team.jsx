@@ -8,6 +8,7 @@ import munir from "././../../../dist/our-team/munir.webp"
 import gulalai from "././../../../dist/our-team/gulalai-khan.webp"
 import nayyab from "././../../../dist/our-team/nayyab.webp"
 import asia from "././../../../dist/our-team/asia-gul.webp"
+
 const leadership = [
   {
     name: "Muhammad Shehriyar",
@@ -76,10 +77,6 @@ const management = [
   },
 ]
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 2b82d66436a37725c5bfcbbeccd970854c14f302
 
 const Team = () => {
   return (
@@ -191,8 +188,9 @@ const Team = () => {
 
 
 
+    
       {/* MANAGEMENT */}
-      {/* MANAGEMENT */}
+{/* MANAGEMENT */}
 <section className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
 
   <p className="section-kicker">Management</p>
@@ -209,92 +207,47 @@ const Team = () => {
         className="overflow-hidden rounded-2xl border border-black/10 bg-white"
       >
 
-        {/* Header: mobile = avatar + text side by side, desktop = image on top */}
-        <div className="flex items-center gap-4 p-4 sm:block sm:p-0">
-
-<<<<<<< HEAD
-              {/* Profile Content */}
-              <div className="p-5">
-
-                <p className="text-[10px] font-bold uppercase tracking-[.2em] text-msred">
-                  Management
-                </p>
-
-                <h3 className="mt-2 text-lg font-black tracking-tight">
-                  {person.name}
-                </h3>
-
-                <p className="mt-1 text-sm font-semibold text-msred">
-                  {person.role}
-                </p>
-
-                <a
-                  href={`mailto:${person.email}`}
-                  className="mt-2 block truncate text-xs text-black/45 transition hover:text-msred"
-                >
-                  {person.email}
-                </a>
-
-                <p className="mt-4 text-xs leading-5 text-black/55">
-                  {person.description}
-                </p>
-
-              </div>
-
-            </div>
-          ))}
-
+        {/* Profile Image */}
+        <div className="h-64 w-full overflow-hidden bg-black/5">
+          <img
+            src={person.image}
+            alt={person.name}
+            className="h-full w-full object-cover object-top"
+          />
         </div>
 
-      </section>
+        {/* Profile Content */}
+        <div className="p-4">
 
+          <p className="text-[9px] font-bold uppercase tracking-[.18em] text-msred">
+            Management
+          </p>
 
-     
+          <h3 className="mt-2 text-base font-black leading-tight tracking-tight">
+            {person.name}
+          </h3>
 
-=======
-          {/* Profile Image */}
-          <div className="h-20 w-20 shrink-0 overflow-hidden rounded-full bg-black/5 sm:h-72 sm:w-full sm:rounded-none">
-            <img
-              src={person.image}
-              alt={person.name}
-              className="h-full w-full object-cover object-top"
-            />
-          </div>
+          <p className="mt-1 text-xs font-semibold leading-4 text-msred">
+            {person.role}
+          </p>
 
-          {/* Name, role, email */}
-          <div className="min-w-0 sm:p-5 sm:pb-0">
-            <p className="hidden text-[10px] font-bold uppercase tracking-[.2em] text-msred sm:block">
-              Management
-            </p>
+          <a
+            href={`mailto:${person.email}`}
+            className="mt-2 block truncate text-[11px] text-black/45 transition hover:text-msred"
+          >
+            {person.email}
+          </a>
 
-            <h3 className="text-lg font-black tracking-tight sm:mt-2">
-              {person.name}
-            </h3>
+          <p className="mt-4 text-[11px] leading-5 text-black/55">
+            {person.description}
+          </p>
 
-            <p className="mt-0.5 text-sm font-semibold text-msred">
-              {person.role}
-            </p>
-            <a
-            
-              href={`mailto:${person.email}`}
-              className="mt-1 block truncate text-xs text-black/45 transition hover:text-msred"
-            >
-              {person.email}
-            </a>
-          </div>
         </div>
-
-        {/* Description */}
-        <p className="px-4 pb-5 text-xs leading-5 text-black/55 sm:px-5 sm:pt-4">
-          {person.description}
-        </p>
-
       </div>
     ))}
 
   </div>
 </section>
->>>>>>> 2b82d66436a37725c5bfcbbeccd970854c14f302
     </div>
   )
 }
