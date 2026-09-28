@@ -121,8 +121,10 @@ const AboutUs = () => {
               Ready to create something memorable?
             </h2>
           </div>
-          <Link to="/contact" className="mt-8 rounded-full bg-white px-7 py-3.5 text-sm font-black text-msred lg:mt-0">
-            Get a Quote →
+          <Link
+            to="/contact"
+            className="mt-8 inline-block rounded-full bg-white px-7 py-3.5 text-sm font-black text-msred lg:mt-0">
+            Request a Quote →
           </Link>
         </div>
       </section>

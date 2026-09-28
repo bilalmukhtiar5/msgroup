@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { FaFacebook } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -54,8 +55,8 @@ const Footer = () => {
             <ul className="mt-5 space-y-3 text-sm">
               <li>
                 <Link to="/services" className="text-white/70 transition-colors hover:text-white">
-  Services
-</Link>
+              Services
+            </Link>
               </li>
               <li>
                 <Link to="/about" className="text-white/70 transition-colors hover:text-white">About Us</Link>
@@ -89,11 +90,14 @@ const Footer = () => {
               <li>Office TF#279 Deans Trade Center Peshawar Cantt Saddar, Pakistan</li>
               <li className="flex gap-4 pt-2">
                 
-                <a href="#" aria-label="Instagram" className="transition-colors hover:text-msred">
+                <a href="https://www.facebook.com/profile.php?id=61594928870735&rdid=eEKESLF0LF4KTbaZ&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F19RwQojEkB%2F#" aria-label="Facebook" className="transition-colors hover:text-msred">
                   <FaFacebook />
                 </a>
-                <a href="#" aria-label="LinkedIn" className="transition-colors hover:text-msred">
+                <a href="https://www.instagram.com/themsgroup.pk/" aria-label="Instagram" className="transition-colors hover:text-msred">
                   <FaInstagram />
+                </a>
+                <a href="https://www.youtube.com/@msgroupnetwork" aria-label="YouTube" className="transition-colors hover:text-msred">
+                  <FaYoutube />
                 </a>
               </li>
             </ul>
@@ -105,6 +109,7 @@ const Footer = () => {
         <div className="flex flex-col items-center justify-between gap-4 border-t border-white/10 py-8 text-xs text-white sm:flex-row">
           <p>© {new Date().getFullYear()} MS Group. All rights reserved.</p>
           <div className="flex gap-6">
+            <Link to="/affiliations-certifications" className="transition-colors hover:text-white">Affiliations</Link>
             <Link to="/privacy" className="transition-colors hover:text-white">Privacy Policy</Link>
             <Link to="/terms" className="transition-colors hover:text-white">Terms</Link>
           </div>

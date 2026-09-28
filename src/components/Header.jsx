@@ -93,18 +93,6 @@ function Header() {
           <Link to="/contact" className="nav-link">
             Contact Us
           </Link>
-
-          <Link to="/portfolio" className="nav-link">
-            Portfolio
-          </Link>
-
-          {/* <Link
-            to="/careers"
-            className="rounded-full bg-msred px-5 py-2.5 text-white transition hover:bg-msredDark"
-          >
-            Careers
-          </Link> */}
-
         </nav>
 
         {/* Mobile Menu Button */}
@@ -179,7 +167,7 @@ function Header() {
                     Our Team
                   </Link>
                   <Link
-                    to="/affiliations"
+                    to="/affiliations-certifications"
                     onClick={() => setMenuOpen(false)}
                     className="text-black/60"
                   >
@@ -195,22 +183,6 @@ function Header() {
               className="text-left"
             >
               Contact Us
-            </Link>
-
-            <Link
-              to="/portfolio"
-              onClick={() => setMenuOpen(false)}
-              className="text-left"
-            >
-              Portfolio
-            </Link>
-
-            <Link
-              to="/careers"
-              onClick={() => setMenuOpen(false)}
-              className="w-fit rounded-full bg-msred px-5 py-2.5 text-white"
-            >
-              Careers
             </Link>
 
           </div>
