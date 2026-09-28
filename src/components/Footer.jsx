@@ -88,7 +88,7 @@ const Footer = () => {
             <ul className="mt-5 space-y-3 text-sm text-white/70">
               <li>+923450757518</li>
               <li>Office TF#279 Deans Trade Center Peshawar Cantt Saddar, Pakistan</li>
-              <li className="flex gap-4 pt-2">
+              <li className="flex gap-4 pt-2 w-5 h-3">
                 
                 <a href="https://www.facebook.com/profile.php?id=61594928870735&rdid=eEKESLF0LF4KTbaZ&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F19RwQojEkB%2F#" aria-label="Facebook" className="transition-colors hover:text-msred">
                   <FaFacebook />

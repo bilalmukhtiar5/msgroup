@@ -68,16 +68,7 @@ const management = [
   },
 ]
 
-// const staff = [
-//   { name: "Full Name", role: "Event Coordinator", image: "/team/staff1.jpg" },
-//   { name: "Full Name", role: "Brand Executive", image: "/team/staff2.jpg" },
-//   { name: "Full Name", role: "Production Assistant", image: "/team/staff3.jpg" },
-//   { name: "Full Name", role: "Design Executive", image: "/team/staff4.jpg" },
-//   { name: "Full Name", role: "Marketing Executive", image: "/team/staff5.jpg" },
-//   { name: "Full Name", role: "Logistics Officer", image: "/team/staff6.jpg" },
-//   { name: "Full Name", role: "Account Executive", image: "/team/staff7.jpg" },
-//   { name: "Full Name", role: "Field Coordinator", image: "/team/staff8.jpg" },
-// ]
+
 
 const Team = () => {
   return (
@@ -190,111 +181,68 @@ const Team = () => {
 
 
       {/* MANAGEMENT */}
-      <section className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
+      {/* MANAGEMENT */}
+<section className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
 
-        <p className="section-kicker">Management</p>
+  <p className="section-kicker">Management</p>
 
-        <h2 className="mt-3 text-3xl font-black tracking-tight sm:text-4xl">
-          Leading each department.
-        </h2>
+  <h2 className="mt-3 text-3xl font-black tracking-tight sm:text-4xl">
+    Leading each department.
+  </h2>
 
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+  <div className="mt-8 grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 
-          {management.map((person) => (
-            <div
-              key={person.name}
-              className="overflow-hidden rounded-2xl border border-black/10 bg-white"
-            >
+    {management.map((person) => (
+      <div
+        key={person.name}
+        className="overflow-hidden rounded-2xl border border-black/10 bg-white"
+      >
 
-              {/* Profile Image */}
-              <div className="h-72 w-full overflow-hidden bg-black/5">
-                <img
-                  src={person.image}
-                  alt={person.name}
-                  className="h-ful w-full object-contain"
-                />
-              </div>
+        {/* Header: mobile = avatar + text side by side, desktop = image on top */}
+        <div className="flex items-center gap-4 p-4 sm:block sm:p-0">
 
-              {/* Profile Content */}
-              <div className="p-5">
-
-                <p className="text-[10px] font-bold uppercase tracking-[.2em] text-msred">
-                  Management
-                </p>
-
-                <h3 className="mt-2 text-lg font-black tracking-tight">
-                  {person.name}
-                </h3>
-
-                <p className="mt-1 text-sm font-semibold text-msred">
-                  {person.role}
-                </p>
-
-                <a
-                  href={`mailto:${person.email}`}
-                  className="mt-2 block truncate text-xs text-black/45 transition hover:text-msred"
-                >
-                  {person.email}
-                </a>
-
-                <p className="mt-4 text-xs leading-5 text-black/55">
-                  {person.description}
-                </p>
-
-              </div>
-
-            </div>
-          ))}
-
-        </div>
-
-      </section>
-
-
-      {/* STAFF GRID */}
-      {/* <section className="bg-[#111] py-20 text-white">
-  <div className="mx-auto max-w-7xl px-5 lg:px-8">
-
-    <p className="section-kicker">Our Staff</p>
-
-    <h2 className="mt-3 text-3xl font-black tracking-tight sm:text-4xl">
-      The team on the ground.
-    </h2>
-
-    <div className="mt-8 grid gap-5 sm:grid-cols-3 lg:grid-cols-4">
-      {staff.map((person) => (
-        <div
-          key={person.name}
-          className="overflow-hidden rounded-2xl border border-white/10 bg-white/4"
-        >
-
-          
-          <div className="h-55 w-full overflow-hidden bg-white/6">
+          {/* Profile Image */}
+          <div className="h-20 w-20 shrink-0 overflow-hidden rounded-full bg-black/5 sm:h-72 sm:w-full sm:rounded-none">
             <img
               src={person.image}
               alt={person.name}
-              className="h-full w-full object-cover"
+              className="h-full w-full object-cover object-top"
             />
           </div>
 
-          
-          <div className="p-4">
-            <h3 className="text-sm font-black">
+          {/* Name, role, email */}
+          <div className="min-w-0 sm:p-5 sm:pb-0">
+            <p className="hidden text-[10px] font-bold uppercase tracking-[.2em] text-msred sm:block">
+              Management
+            </p>
+
+            <h3 className="text-lg font-black tracking-tight sm:mt-2">
               {person.name}
             </h3>
 
-            <p className="mt-1 text-xs text-white/50">
+            <p className="mt-0.5 text-sm font-semibold text-msred">
               {person.role}
             </p>
+            <a
+            
+              href={`mailto:${person.email}`}
+              className="mt-1 block truncate text-xs text-black/45 transition hover:text-msred"
+            >
+              {person.email}
+            </a>
           </div>
-
         </div>
-      ))}
-    </div>
+
+        {/* Description */}
+        <p className="px-4 pb-5 text-xs leading-5 text-black/55 sm:px-5 sm:pt-4">
+          {person.description}
+        </p>
+
+      </div>
+    ))}
 
   </div>
-</section> */}
-
+</section>
     </div>
   )
 }
