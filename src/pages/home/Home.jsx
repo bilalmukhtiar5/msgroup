@@ -8,18 +8,18 @@ import Testimonials from "./Testimonials";
 import AffiliationsTeaser from "./AffiliationsTeaser";
 
 const Home = () => {
-   const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const goTo = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
     setMenuOpen(false);
   };
 
-  
+
   return (
 
     <div className="min-h-screen bg-white">
-      
+
 
       {/* HERO */}
       <main id="home" className="pt-20">
@@ -41,8 +41,8 @@ const Home = () => {
               </h1>
 
               <p className="mt-7 max-w-xl text-base leading-7 text-white/65 sm:text-lg">
-                MS Group Limited delivers integrated solutions across event management, 
-                brand activations, event production, fabrication, promotional staffing, 
+                MS Group Limited delivers integrated solutions across event management,
+                brand activations, event production, fabrication, promotional staffing,
                 and corporate branding.
               </p>
 
@@ -57,7 +57,7 @@ const Home = () => {
                   onClick={() => goTo("contact")}
                   className="rounded-full border border-white/25 px-7 py-3.5 text-sm font-bold transition hover:bg-white hover:text-black"
                 >
-                  Talk to Our Team 
+                  Talk to Our Team
                 </button>
               </div>
 
@@ -112,8 +112,8 @@ const Home = () => {
           </div>
         </section>
 
-        <VideoSection/>
-        
+        <VideoSection />
+
         <Services />
 
         {/* ABOUT STRIP */}
@@ -140,7 +140,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-                
+
         {/* CATEGORY DETAILS */}
         <section className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
           <div className="mb-14 max-w-2xl">
@@ -160,9 +160,10 @@ const Home = () => {
             </Link>
           </div>
         </section>
-         <AffiliationsTeaser />
-                <Testimonials />
-                <TrustStrip />
+        <Testimonials />
+        <AffiliationsTeaser />
+
+        <TrustStrip />
         {/* CTA */}
         <section id="contact" className="mx-auto max-w-7xl px-5 pb-24 lg:px-8 mt-20">
           <div className="overflow-hidden rounded-4xl bg-msred px-7 py-14 text-white sm:px-12 lg:flex lg:items-center lg:justify-between">
@@ -172,7 +173,10 @@ const Home = () => {
                 Have an event, campaign or brand experience in mind?
               </h2>
             </div>
-            <Link to="/contact" className="mt-8 rounded-full bg-white px-7 py-3.5 text-sm font-black text-msred lg:mt-0">
+            <Link
+              to="/contact"
+              className="mt-8 inline-block rounded-full bg-white px-7 py-3.5 text-sm font-black text-msred lg:mt-0"
+            >
               Request a Quote →
             </Link>
           </div>
@@ -182,6 +186,6 @@ const Home = () => {
     </div>
   );
 }
- 
+
 
 export default Home

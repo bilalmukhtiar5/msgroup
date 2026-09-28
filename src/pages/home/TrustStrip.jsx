@@ -78,7 +78,7 @@ const TrustStrip = () => {
                 <img
                   src={client.logo}
                   alt={client.name}
-                  className="grayscale opacity-70 transition duration-300 hover:opacity-100 hover:grayscale-0"
+                  className="transition duration-300 hover:opacity-100 hover:grayscale-0"
                 />
               </div>
 
@@ -104,7 +104,7 @@ const TrustStrip = () => {
                 <img
                   src={client.logo}
                   alt={client.name}
-                  className="max-h-14 max-w-28 object-contain grayscale opacity-70 transition duration-300 hover:opacity-100 hover:grayscale-0"
+                  className="max-h-14 max-w-28 object-contain transition duration-300 hover:opacity-100 hover:grayscale-0"
                 />
               </div>
 
