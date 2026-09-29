@@ -7,7 +7,7 @@ import junaid from "././../../../dist/our-team/muhammad-junaid-waris.webp"
 import munir from "././../../../dist/our-team/munir.webp"
 import gulalai from "././../../../dist/our-team/gulalai-khan.webp"
 import nayyab from "././../../../dist/our-team/nayyab.webp"
-import asia from "././../../../dist/our-team/asia-gul.webp"
+import asia from "././../../../dist/our-team/asia-gul.png"
 
 const leadership = [
   {
