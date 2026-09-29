@@ -1,6 +1,10 @@
 import React from 'react'
 
 const VideoSection = () => {
+  const goTo = (id) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" })
+  }
+
   return (
     <section id="video" className="bg-[#111] py-24 text-white">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
@@ -26,34 +30,23 @@ const VideoSection = () => {
           </p>
           <button
             onClick={() => goTo("services")}
-            className="mt-2 rounded-full bg-msred px-7 py-3.5 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:bg-msredDark"
+            className="mt-5 rounded-full bg-msred px-7 py-3.5 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:bg-msredDark"
           >
             Discover What We Create
           </button>
         </div>
 
         {/* Video */}
-        {/* Video */}
-        <div className="aspect-video w-full">
-          <video
-            className="h-full w-full object-cover"
-            autoPlay
-            muted
-            loop
-            playsInline
-            controls
-            poster="https://www.youtube.com/watch?v=rujFOTT7qgE"
-          >
-            <source
-              src="https://www.youtube.com/watch?v=rujFOTT7qgE"
-              type="video/webm"
-            />
-            <source
-              src="https://www.youtube.com/watch?v=rujFOTT7qgE"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
+        <div className="relative mx-auto aspect-video w-full max-w-5xl overflow-hidden rounded-2xl">
+          <iframe
+            className="absolute inset-0 h-full w-full"
+            src="https://www.youtube.com/embed/rujFOTT7qgE?autoplay=1&mute=1&loop=1&playlist=rujFOTT7qgE&controls=1&rel=0"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          />
         </div>
 
         {/* Bottom Content */}
