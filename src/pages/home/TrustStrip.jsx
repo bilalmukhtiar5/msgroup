@@ -4,7 +4,7 @@ import image2 from "../../../dist/brand-icons/asia.webp"
 import image3 from "../../../dist/brand-icons/national-foods.png"
 import image4 from "../../../dist/brand-icons/suntrix.webp"
 import image5 from "../../../dist/brand-icons/who.png"
-
+import image6 from "../../../dist/brand-icons/qurshi.webp"
 import image9 from "../../../dist/brand-icons/oppo.webp"
 import image10 from "../../../dist/brand-icons/Realme.png"
 import image11 from "../../../dist/brand-icons/butterfly.webp"
@@ -27,6 +27,7 @@ const clientsRow1 = [
   {name: "Super Asia", logo: image2},
   { name: "Suntrix", logo: image4 },  
   { name: "WHO", logo: image5 },
+  {name: "Qurshi", logo: image6},
   { name: "OPPO", logo: image9 },
   { name: "REALME", logo: image10 },
   { name: "NATIONAL FOODS", logo: image3 },

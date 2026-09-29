@@ -36,14 +36,14 @@ const PortfolioPreview = () => {
         {preview.map((item) => (
           <div
             key={item.id}
-            className="group relative aspect-[4/5] overflow-hidden rounded-3xl"
+            className="group relative aspect-4/5 overflow-hidden rounded-3xl"
           >
             <img
               src={item.image}
               alt={item.title}
               className="h-full w-full object-cover transition duration-500 group-hover:scale-110"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-black/0" />
+            <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/0 to-black/0" />
             <p className="absolute bottom-5 left-5 right-5 text-sm font-black text-white">
               {item.title}
             </p>
