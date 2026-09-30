@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaChevronDown } from "react-icons/fa6";
-import logo from "../../dist/assets/ms-group-logo.png";
+import logo from "../../dist/image/ms-group-logos.png";
+
 
 function Header() {
   const [aboutDropdown, setAboutDropdown] = useState(false);

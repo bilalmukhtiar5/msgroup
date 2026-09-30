@@ -39,7 +39,7 @@ const Footer = () => {
             <img
             src={logo}
             alt="MS Group"
-            className="h-16 w-auto object-contain"
+            className="h-20 w-auto object-contain"
           />
             <p className="mt-4 text-sm leading-6 text-white/50">
               Creative production for events and experiences that people
