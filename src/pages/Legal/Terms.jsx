@@ -1,5 +1,60 @@
 import React from 'react'
 
+const Section = ({ title, children }) => (
+  <section>
+    <h2 className="text-xl font-black text-black">{title}</h2>
+    {children}
+  </section>
+)
+
+const List = ({ items }) => (
+  <ul className="mt-3 list-disc space-y-2 pl-5">
+    {items.map((item) => (
+      <li key={item}>{item}</li>
+    ))}
+  </ul>
+)
+
+const services = [
+  'Events & Experiences',
+  'Brand Activations & Experiential Marketing',
+  'Promotional Staffing & Talent Management',
+  'Exhibitions, Stalls & Fabrication',
+  'Printing, Branding & Outdoor Advertising',
+  'Event Production & Media Services',
+  'Event Décor, Hospitality & Venue Management',
+  'Corporate Gifting & Promotional Merchandise',
+  'Software & Web Development',
+  'Website Design & Development',
+  'Custom Software Development',
+  'Business Management Systems',
+  'Social Media Management',
+  'Digital Marketing & Content Creation',
+]
+
+const payments = [
+  'Advance payment may be required before work commences.',
+  'Project execution will commence only after the agreed advance payment has been received.',
+  'Remaining payments shall be made according to the agreed payment schedule.',
+  'Delayed payments may result in project delays, suspension of services, or additional charges where applicable.',
+]
+
+const digitalTerms = [
+  'Project requirements, deliverables, and timelines shall be agreed upon before work begins.',
+  'Additional features, revisions, or changes beyond the approved scope may incur additional charges.',
+  'Clients are responsible for the accuracy and legality of all content, materials, and information provided.',
+  'Domain registration, web hosting, third-party software licenses, advertising budgets, platform fees, and external tools are not included unless specifically stated in writing.',
+  'While MS Group strives to achieve the best possible results, specific rankings, traffic levels, sales, leads, engagement, or marketing outcomes cannot be guaranteed.',
+  'Ownership of completed websites, software, and digital assets shall transfer to the client upon receipt of full payment, unless otherwise agreed in writing.',
+]
+
+const websiteUse = [
+  'Use the website for any unlawful purpose.',
+  'Attempt unauthorized access to systems, data, or services.',
+  "Interfere with the website's functionality or security.",
+  'Submit false, misleading, harmful, or inappropriate content.',
+]
+
 const Terms = () => {
   return (
     <div className="min-h-screen bg-white pt-32 pb-24">
@@ -10,94 +65,165 @@ const Terms = () => {
           Legal
         </p>
         <h1 className="mt-4 text-4xl font-black tracking-tight sm:text-5xl">
-          Terms & Conditions
+          Terms &amp; Conditions
         </h1>
         <p className="mt-4 text-sm text-black/40">
-          Last updated: {new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
+          Last updated: 29 September 2026
         </p>
 
         <div className="mt-12 space-y-10 text-black/70 leading-7">
 
-          <section>
-            <h2 className="text-xl font-black text-black">1. Acceptance of Terms</h2>
+          <Section title="1. Introduction">
             <p className="mt-3">
-              By accessing or using the MS Group website and services, you
-              agree to be bound by these Terms & Conditions. If you do not
-              agree with any part of these terms, please do not use our
-              website or services.
+              Welcome to MS Group ("we", "us", or "our"). These Terms &amp;
+              Conditions govern your access to and use of our website and
+              services. By accessing our website or engaging our services,
+              you agree to be bound by these Terms &amp; Conditions.
             </p>
-          </section>
+          </Section>
 
-          <section>
-            <h2 className="text-xl font-black text-black">2. Services</h2>
+          <Section title="2. Our Services">
             <p className="mt-3">
-              MS Group provides event management, brand activation,
-              production, fabrication, staffing and related services.
-              Specific terms for individual projects will be agreed upon
-              separately through a signed proposal or contract.
+              MS Group provides professional services including, but not
+              limited to:
             </p>
-          </section>
+            <List items={services} />
+            <p className="mt-3">
+              Service availability may vary based on project requirements,
+              timelines, locations, and resource availability.
+            </p>
+          </Section>
 
-          <section>
-            <h2 className="text-xl font-black text-black">3. Use of Website</h2>
+          <Section title="3. Quotations & Project Approval">
             <p className="mt-3">
-              You agree to use this website only for lawful purposes and in
-              a way that does not infringe the rights of, or restrict or
-              inhibit the use of, this website by any third party.
+              All quotations, proposals, and estimates provided by MS Group
+              are subject to written approval. Any changes to project scope,
+              specifications, quantities, timelines, or deliverables may
+              result in revised pricing and project schedules.
             </p>
-          </section>
+          </Section>
 
-          <section>
-            <h2 className="text-xl font-black text-black">4. Intellectual Property</h2>
-            <p className="mt-3">
-              All content on this website, including text, images, logos
-              and designs, is the property of MS Group and may not be
-              reproduced or used without prior written consent.
+          <Section title="4. Payments & Taxes">
+            <List items={payments} />
+            <h3 className="mt-6 font-bold text-black">Taxes</h3>
+            <p className="mt-2">
+              Unless otherwise stated, all quotations, proposals, and
+              invoices are exclusive of applicable taxes. Any federal,
+              provincial, sales, withholding, food, venue, government, or
+              other applicable taxes shall be charged separately in
+              accordance with relevant laws and regulations.
             </p>
-          </section>
+          </Section>
 
-          <section>
-            <h2 className="text-xl font-black text-black">5. Payments & Cancellations</h2>
+          <Section title="5. Client Responsibilities">
             <p className="mt-3">
-              Payment terms, cancellation policies and refund conditions for
-              services booked with MS Group will be outlined in individual
-              service agreements or contracts.
+              Clients are responsible for providing accurate information,
+              approvals, content, branding materials, access credentials,
+              and feedback necessary for project execution. Delays caused by
+              incomplete information, late approvals, or requested changes
+              may affect project timelines and delivery schedules.
             </p>
-          </section>
+          </Section>
 
-          <section>
-            <h2 className="text-xl font-black text-black">6. Limitation of Liability</h2>
+          <Section title="6. Software, Website & Digital Services">
             <p className="mt-3">
-              MS Group shall not be held liable for any indirect, incidental
-              or consequential damages arising from the use of our website
-              or services, to the fullest extent permitted by law.
+              For software development, website development, social media
+              management, and digital marketing services:
             </p>
-          </section>
+            <List items={digitalTerms} />
+          </Section>
 
-          <section>
-            <h2 className="text-xl font-black text-black">7. Changes to Terms</h2>
+          <Section title="7. Cancellations & Changes">
             <p className="mt-3">
-              We reserve the right to update or modify these Terms &
-              Conditions at any time. Continued use of our website after
-              changes constitutes acceptance of the updated terms.
+              If a project, event, campaign, or service is cancelled,
+              postponed, or significantly modified after confirmation, MS
+              Group reserves the right to recover costs incurred, work
+              completed, and any non-refundable third-party expenses.
             </p>
-          </section>
+          </Section>
 
-          <section>
-            <h2 className="text-xl font-black text-black">8. Contact Us</h2>
+          <Section title="8. Intellectual Property">
             <p className="mt-3">
-              For any questions regarding these Terms & Conditions, contact
-              us at{' '}
-              <a href="mailto:hello@msgroup.com" className="font-semibold text-msred">
-                hello@msgroup.com
-              </a>.
+              All trademarks, logos, content, and materials provided by the
+              client remain the property of the client. Creative concepts,
+              designs, proposals, presentations, software code, marketing
+              materials, and other deliverables created by MS Group remain
+              the property of MS Group until full payment has been received,
+              unless otherwise agreed in writing.
             </p>
-          </section>
+          </Section>
+
+          <Section title="9. Website Use">
+            <p className="mt-3">Users agree not to:</p>
+            <List items={websiteUse} />
+            <p className="mt-3">
+              MS Group reserves the right to restrict or terminate access to
+              users who violate these Terms.
+            </p>
+          </Section>
+
+          <Section title="10. Limitation of Liability">
+            <p className="mt-3">
+              To the maximum extent permitted by law, MS Group shall not be
+              liable for any indirect, incidental, consequential, special,
+              or business-related losses arising from the use of our website
+              or services.
+            </p>
+            <p className="mt-3">
+              MS Group's total liability, where applicable, shall not exceed
+              the amount paid by the client for the specific services giving
+              rise to the claim.
+            </p>
+          </Section>
+
+          <Section title="11. Force Majeure">
+            <p className="mt-3">
+              MS Group shall not be responsible for delays, interruptions,
+              or failures resulting from circumstances beyond our reasonable
+              control, including natural disasters, government actions,
+              technical failures, public emergencies, labor disputes,
+              transportation disruptions, or other unforeseen events.
+            </p>
+          </Section>
+
+          <Section title="12. Governing Law">
+            <p className="mt-3">
+              These Terms &amp; Conditions shall be governed by and
+              interpreted in accordance with the laws of the Islamic
+              Republic of Pakistan. Any disputes arising from these Terms
+              shall be subject to the jurisdiction of the competent courts
+              of Pakistan.
+            </p>
+          </Section>
+
+          <Section title="13. Updates to These Terms">
+            <p className="mt-3">
+              MS Group reserves the right to modify or update these Terms
+              &amp; Conditions at any time. Any revisions will become
+              effective immediately upon publication on this website.
+            </p>
+          </Section>
+
+          <Section title="14. Contact Us">
+            <p className="mt-3">
+              MS Group
+              <br />
+              Email:{' '}
+              <a href="mailto:info@msgroup.pk" className="font-semibold text-msred">
+                info@msgroup.pk
+              </a>
+            </p>
+            <p className="mt-3">
+              If you have any questions regarding these Terms &amp;
+              Conditions, please contact our team.
+            </p>
+          </Section>
 
         </div>
       </div>
     </div>
   )
 }
+
 
 export default Terms

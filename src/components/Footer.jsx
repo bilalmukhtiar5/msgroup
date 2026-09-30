@@ -110,7 +110,7 @@ const Footer = () => {
           <p>© {new Date().getFullYear()} MS Group. All rights reserved.</p>
           <div className="flex gap-6">
             <Link to="/affiliations-certifications" className="transition-colors hover:text-white">Affiliations</Link>
-            <Link to="/privacy" className="transition-colors hover:text-white">Privacy Policy</Link>
+            
             <Link to="/terms" className="transition-colors hover:text-white">Terms</Link>
           </div>
         </div>

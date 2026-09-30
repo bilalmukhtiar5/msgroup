@@ -112,7 +112,43 @@ const services = [
     ],
     icon: "□",
     image: "/service-cards/gifting.jpg"
-  }
+  },
+{
+  id: "Web Development",
+  number: "09",
+  title: "Web Development",
+  short: "We design, develop, and maintain professional websites, web applications, and custom software solutions, combining innovative technology, user-focused design, and reliable development from concept to deployment.",
+  items: [
+    "Website Design & Development",
+    "Corporate & Business Websites",
+    "Web Applications & Portals",
+    "Mobile-Friendly Websites",
+    "Website Maintenance & Support",
+    "Technical Support & Upgrades"
+  ],
+  icon: "□",
+  image: "/service-cards/gifting.jpg"
+}, 
+{
+  id: "Social Media Management & Digital Marketing",
+  number: "10",
+  title: "Social Media Management & Digital Marketing",
+  short: "We manage and grow brand presence across digital platforms through strategic content creation, daily management, audience engagement, and effective online marketing solutions.",
+  items: [
+    "Facebook Page Management",
+    "Instagram Page Management",
+    "Social Media Strategy",
+    "Daily Content Posting",
+    "Product & Service Promotions",
+    "Graphic Design for Social Media",
+    "Content Creation & Copywriting",
+    "Community Engagement",
+    "Social Media Advertising Support",
+    "Performance Monitoring & Reporting"
+  ],
+  icon: "□",
+  image: "/service-cards/social-media.jpg"
+}
 ];
 
 const Services = () => {
