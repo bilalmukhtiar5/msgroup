@@ -148,10 +148,7 @@ const Home = () => {
             <h2 className="mt-3 text-4xl font-black tracking-tight sm:text-5xl">
               Explore our capabilities.
             </h2>
-            <p className="mt-5 text-black/55">
-              Each service category can become its own detailed page later.
-              For this demo, the complete sub-services are shown below.
-            </p>
+            
             <Link
               to="/services"
               className="mt-6 inline-block rounded-full bg-msred px-5 py-2.5 text-white transition hover:bg-msredDark"

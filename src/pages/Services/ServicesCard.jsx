@@ -104,7 +104,7 @@ const services = [
     id: "Corporate Gifting & Promotional Merchandise",
     number: "08",
     title: "Corporate Gifting & Promotional Merchandise",
-    short: "We turn brand moments into memorable customer experiences, connecting brands with their audiences across meaningful and engaging touch points.",
+    short: "From branded gift hampers and executive sets to custom-printed merchandise, we source, design, and deliver corporate gifts and promotional items that strengthen relationships and keep your brand remembered long after the event.",
     items: [
       "Corporate & Executive Gifts", "Promotional Giveaways", "Customized Merchandise",
       "Branded Apparel", "T-Shirts & Caps", "Mugs & Pens", "Diaries & Power Banks",
