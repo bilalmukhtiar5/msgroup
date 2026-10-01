@@ -95,7 +95,7 @@ const services = [
     title: "Interior Design, Build and Execution",
     short: "We design, manufacture, and build complete commercial spaces and outlets, combining creative concepts, quality fabrication, and professional execution from design to completion.",
     items: [
-      "Resturent and Cafe Development", "Retail & Showroom Outlets", "Mobile & Franchise Outlets",
+      "Restaurant & Cafe Development", "Retail & Showroom Outlets", "Mobile & Franchise Outlets",
       "Factory & Industrial Outlets", "Office & Corporate Interiors", "Custom Furniture & Fixtures",
       "Space Planning & 3D Visualization", "Fabrication & Manufacturing", "Renovation & Remodeling", "Complete Turnkey Solutions"
     ],
@@ -126,7 +126,7 @@ const services = [
     "Web Applications & Portals",
     "Mobile-Friendly Websites",
     "Website Maintenance & Support",
-    "Technical Support & Upgrades"
+    "Maintenance, Support & Upgrades"
   ],
   icon: "□",
   image: web,
