@@ -2,6 +2,8 @@
 import { useNavigate } from 'react-router-dom'
 import event from "../../../dist/service-cards/events.webp"
 import brandActivation from "../../../dist/service-cards/brand-activation.jpg"
+import social from "../../../dist/service-cards/social.jpg"
+import web from "../../../dist/service-cards/web-develop.jpg"
 
 const services = [
   {
@@ -127,7 +129,7 @@ const services = [
     "Technical Support & Upgrades"
   ],
   icon: "□",
-  image: "/service-cards/gifting.jpg"
+  image: web,
 }, 
 {
   id: "Social Media Management & Digital Marketing",
@@ -147,7 +149,7 @@ const services = [
     "Performance Monitoring & Reporting"
   ],
   icon: "□",
-  image: "/service-cards/social-media.jpg"
+  image: social,
 }
 ];
 
@@ -189,7 +191,7 @@ const Services = () => {
     >
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center transition duration-500 group-hover:scale-110"
+        className="opacity-80 absolute inset-0 bg-cover bg-center transition duration-500 group-hover:scale-110"
         style={{ backgroundImage: `url(${service.image})` }}
       />
 
@@ -210,9 +212,9 @@ const Services = () => {
         <h3 className="mt-12 text-xl font-black leading-tight text-white">
           {service.title}
         </h3>
-        <p className="mt-3 text-sm leading-6 text-white/70">
-          {service.short}
-        </p>
+        <p className="mt-3 text-sm leading-6 text-white">
+  {service.short}
+</p>
 
         <span className="mt-auto inline-flex items-center gap-2 pt-6 text-xs font-black uppercase tracking-wider text-msred">
           View details
