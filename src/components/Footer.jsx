@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom'
 import { FaFacebook } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa6";
-import logo from "../../dist/assets/footer-logo.webp"
+import footerlogo from "../assets/footer-logo/footer-logo.webp"
+
+
 const Footer = () => {
   return (
     <footer className="bg-[#0d0d0d] text-white">
@@ -37,7 +39,7 @@ const Footer = () => {
           <div className="lg:col-span-1">
             
             <img
-            src={logo}
+            src={footerlogo}
             alt="MS Group"
             className="h-20 w-auto object-contain"
           />

@@ -1,5 +1,5 @@
 import React from 'react'
-import image1 from "../../../dist/brand-icons/sir-jahanzaib.webp"
+import image1 from "../../assets/brand-icons/sir-jahanzaib.webp"
 
 const Founder = () => {
   return (

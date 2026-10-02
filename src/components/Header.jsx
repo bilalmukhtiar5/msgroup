@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaChevronDown } from "react-icons/fa6";
-import logo from "../../dist/image/ms-group-logos.png";
+import logo from "../assets/image/ms-group-logos.png";
 
 
 function Header() {

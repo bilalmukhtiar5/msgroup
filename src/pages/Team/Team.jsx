@@ -1,13 +1,12 @@
 import React from 'react'
-import CEO from "././../../../dist/our-team/Managing-Director.webp"
-import bilal from "././../../../dist/our-team/bilal-mukhtiar.webp"
-import sundas from "././../../../dist/our-team/sundas-nayab.webp"
-import ayesha from "././../../../dist/our-team/ayesha-ishfaq.webp"
-import junaid from "././../../../dist/our-team/muhammad-junaid-waris.webp"
-import munir from "././../../../dist/our-team/munir.webp"
-import gulalai from "././../../../dist/our-team/gulalai-khan.webp"
-import nayyab from "././../../../dist/our-team/nayyab.webp"
-import asia from "././../../../dist/our-team/asia-gul.png"
+import CEO from "../../assets/our-team/Managing-Director.webp"
+import bilal from "../../assets/our-team/bilal-mukhtiar.webp"
+import ayesha from "../../assets/our-team/ayesha-ishfaq.webp"
+import junaid from "../../assets/our-team/muhammad-junaid-waris.webp"
+import munir from "../../assets/our-team/munir.webp"
+import gulalai from "../../assets/our-team/gulalai-khan.webp"
+import nayyab from "../../assets/our-team/nayyab.webp"
+import asia from "../../assets/our-team/asia-gul.png"
 
 const leadership = [
   {

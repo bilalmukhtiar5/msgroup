@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Check } from 'lucide-react'
-import secpLogo from "../../../dist/affiliation-icons/SECP.webp"
-import fbrLogo from "../../../dist/affiliation-icons/FBR.webp"
-import kpraLogo from "../../../dist/affiliation-icons/KPRA.webp"
-import scciLogo from "../../../dist/affiliation-icons/CHAMBER.webp"
+import secpLogo from "../../assets/affiliation.icons/secp.webp"
+import fbrLogo from "../../assets/affiliation.icons/fbr.webp"
+import kpraLogo from "../../assets/affiliation.icons/kpra.webp"
+import scciLogo from "../../assets/affiliation.icons/chamber.webp"
 
 const items = [
   {

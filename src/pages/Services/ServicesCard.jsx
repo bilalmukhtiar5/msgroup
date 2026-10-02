@@ -1,9 +1,15 @@
 //import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import event from "../../../dist/service-cards/events.webp"
-import brandActivation from "../../../dist/service-cards/brand-activation.jpg"
-import social from "../../../dist/service-cards/social.jpg"
-import web from "../../../dist/service-cards/web-develop.jpg"
+import event from "../../assets/service.cards/events.webp"
+import brandActivation from "../../assets/service.cards/brand-activation.jpg"
+import social from "../../assets/service.cards/social.jpg"
+import web from "../../assets/service.cards/web-develop.jpg"
+import staffing from "../../assets/service.cards/staffing.jpg"
+import exhibitions from "../../assets/service.cards/exhibitions.jpg"
+import printing from "../../assets/service.cards/printing.jpg"
+import production from "../../assets/service.cards/production-media.jpg"
+import decor from "../../assets/service.cards/decor.jpg"
+import gifting from "../../assets/service.cards/gifting.jpg"
 
 const services = [
   {
@@ -45,7 +51,7 @@ const services = [
       "Promotional Teams", "Influencer & Celebrity Management"
     ],
     icon: "◉",
-    image: "/service-cards/staffing.jpg",
+    image: staffing,
   },
   {
     id: "exhibitions",
@@ -58,7 +64,7 @@ const services = [
       "Brand Installations", "Stage & Event Structures", "Set Design", "Branded Counters"
     ],
     icon: "◇",
-    image: "/service-cards/exhibitions.jpg",
+    image: exhibitions,
   },
   {
     id: "printing",
@@ -72,7 +78,7 @@ const services = [
       "OOH Advertising", "Media Walls", "Corporate Branding", "Promotional Materials"
     ],
     icon: "▣",
-    image: "/service-cards/printing.jpg"
+    image: printing,
   },
   {
     id: "production",
@@ -87,7 +93,7 @@ const services = [
       "Highlight & Same-Day Event Content"
     ],
     icon: "▶",
-    image: "/service-cards/production-media.jpg"
+    image: production,
   },
   {
     id: "decor",
@@ -100,7 +106,7 @@ const services = [
       "Space Planning & 3D Visualization", "Fabrication & Manufacturing", "Renovation & Remodeling", "Complete Turnkey Solutions"
     ],
     icon: "❖",
-    image: "/service-cards/decor.jpg"
+    image: decor,
   },
   {
     id: "Corporate Gifting & Promotional Merchandise",
@@ -113,7 +119,7 @@ const services = [
       "USB Drives & Gift Boxes", "Awards, Trophies, Certificates & Plaques"
     ],
     icon: "□",
-    image: "/service-cards/gifting.jpg"
+    image: gifting,
   },
 {
   id: "Web Development",

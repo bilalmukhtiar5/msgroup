@@ -2,19 +2,24 @@ import { useState } from "react";
 import Services, { services } from "../Services/ServicesCard";
 import VideoSection from "./VideoSection";
 import { Link } from "react-router-dom";
-import Blog from "../Blog/Blog";
 import TrustStrip from "./TrustStrip";
 import Testimonials from "./Testimonials";
 import AffiliationsTeaser from "./AffiliationsTeaser";
 
+import { ArrowUpRight, ArrowRight } from "lucide-react";
+
+
+
+
 const Home = () => {
+  const featured = services.slice(0, 3);
+
   const [menuOpen, setMenuOpen] = useState(false);
 
   const goTo = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
     setMenuOpen(false);
   };
-
 
   return (
 
@@ -142,21 +147,89 @@ const Home = () => {
         </section>
 
         {/* CATEGORY DETAILS */}
+
+
+
         <section className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
-          <div className="mb-14 max-w-2xl">
-            <p className="section-kicker">Service details</p>
-            <h2 className="mt-3 text-4xl font-black tracking-tight sm:text-5xl">
-              Explore our capabilities.
-            </h2>
-            
+          {/* Header */}
+          <div className="mb-14 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+            <div className="max-w-2xl">
+              <p className="section-kicker">Service details</p>
+              <h2 className="mt-3 text-4xl font-black tracking-tight sm:text-5xl">
+                Explore our <span className="text-msred">capabilities.</span>
+              </h2>
+              <p className="mt-4 text-base text-neutral-500 sm:text-lg">
+                We plan, design, and deliver complete brand experiences, so you work with one partner instead of many.
+              </p>
+            </div>
+
             <Link
               to="/services"
-              className="mt-6 inline-block rounded-full bg-msred px-5 py-2.5 text-white transition hover:bg-msredDark"
+              className="group inline-flex w-fit items-center gap-2 rounded-full bg-msred px-6 py-3 font-semibold text-white transition hover:bg-msredDark"
             >
               View All Services
+              <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
             </Link>
           </div>
+
+          {/* 3 Featured Cards */}
+          <div className="grid gap-6 md:grid-cols-3">
+            {featured.map((s) => (
+              <Link
+                key={s.id}
+                to="/services"
+                className="group relative flex flex-col overflow-hidden rounded-2xl border border-neutral-200 bg-white transition duration-300 hover:-translate-y-1 hover:border-msred hover:shadow-xl"
+              >
+                {/* Image */}
+                <div className="relative aspect-4/3 overflow-hidden bg-neutral-100">
+                  <img
+                    src={s.image}
+                    alt={s.title}
+                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-linear-to-t from-black/50 via-transparent to-transparent" />
+                  <span className="absolute left-5 top-4 text-sm font-bold tracking-widest text-white/90">
+                    {s.number}
+                  </span>
+                  <span className="absolute right-5 top-4 flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-lg text-msred">
+                    {s.icon}
+                  </span>
+                </div>
+
+                {/* Content */}
+                <div className="flex flex-1 flex-col p-7">
+                  <h3 className="text-xl font-bold text-neutral-900">{s.title}</h3>
+                  <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-neutral-500">
+                    {s.short}
+                  </p>
+
+                  {/* Pehle 3 items as tags */}
+                  <div className="mt-5 flex flex-wrap gap-2">
+                    {s.items.slice(0, 3).map((item) => (
+                      <span
+                        key={item}
+                        className="rounded-full bg-red-50 px-3 py-1 text-xs font-medium text-msred"
+                      >
+                        {item}
+                      </span>
+                    ))}
+                    {s.items.length > 3 && (
+                      <span className="rounded-full bg-neutral-100 px-3 py-1 text-xs font-medium text-neutral-500">
+                        +{s.items.length - 3} more
+                      </span>
+                    )}
+                  </div>
+
+                  <span className="mt-auto inline-flex items-center gap-1 pt-6 text-sm font-semibold text-msred">
+                    Learn more
+                    <ArrowUpRight className="h-4 w-4 transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+                  </span>
+                </div>
+              </Link>
+            ))}
+          </div>
         </section>
+
         <Testimonials />
         <AffiliationsTeaser />
 

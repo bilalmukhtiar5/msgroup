@@ -1,9 +1,10 @@
 import React from 'react'
 import { Check } from 'lucide-react'
-import secp from "../../../dist/affiliation-icons/chamber.webp"
-import fbr from "../../../dist/affiliation-icons/fbr.webp"
-import kpra from "../../../dist/affiliation-icons/kpra.webp"
-import chamber from "../../../dist/affiliation-icons/secp.webp"
+import secp from "../../assets/affiliation.icons/secp.webp"
+import fbr from "../../assets/affiliation.icons/fbr.webp"
+import kpra from "../../assets/affiliation.icons/kpra.webp"
+import chamber from "../../assets/affiliation.icons/chamber.webp"
+
 
 const authorities = [
   {
@@ -100,7 +101,7 @@ const AffiliationsCertifications = () => {
         </div>
 
         {/* Our Commitment */}
-        <div className="mt-20 rounded-[2rem] bg-[#111] px-8 py-14 text-white sm:px-12">
+        <div className="mt-20 rounded-4xl bg-[#111] px-8 py-14 text-white sm:px-12">
           <p className="section-kicker">Our Commitment</p>
           <p className="mt-5 max-w-3xl text-base leading-7 text-white/70 sm:text-lg">
             Our registrations and affiliations demonstrate our commitment to
