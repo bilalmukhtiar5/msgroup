@@ -37,12 +37,14 @@ const Footer = () => {
 
           {/* Brand */}
           <div className="lg:col-span-1">
-            
-            <img
-            src={footerlogo}
-            alt="MS Group"
-            className="h-20 w-auto object-contain"
-          />
+
+            <Link to="/">
+              <img
+                src={footerlogo}
+                alt="MS Group"
+                className="h-24 w-auto object-contain"
+              />
+            </Link>
             <p className="mt-4 text-sm leading-6 text-white/50">
               Creative production for events and experiences that people
               actually remember.
@@ -55,8 +57,8 @@ const Footer = () => {
             <ul className="mt-5 space-y-3 text-sm">
               <li>
                 <Link to="/services" className="text-white/70 transition-colors hover:text-white">
-              Services
-            </Link>
+                  Services
+                </Link>
               </li>
               <li>
                 <Link to="/about" className="text-white/70 transition-colors hover:text-white">About Us</Link>
@@ -67,7 +69,7 @@ const Footer = () => {
               <li>
                 <Link to="/contact" className="text-white/70 transition-colors hover:text-white">Contact Us</Link>
               </li>
-              
+
             </ul>
           </div>
 
@@ -88,10 +90,10 @@ const Footer = () => {
             <p className="text-sm font-semibold text-white/40">Contact</p>
             <ul className="mt-5 space-y-3 text-sm text-white/70">
               <li>+92 345 0757518</li>
-              <li>Head Office # TF-279, Deans Trade Centre, Peshawar Cantt, 
+              <li>Head Office # TF-279, Deans Trade Centre, Peshawar Cantt,
                 Saddar, Peshawar, Khyber Pakhtunkhwa, Pakistan.</li>
               <li className="flex gap-4 pt-2">
-                
+
                 <a href="https://www.facebook.com/profile.php?id=61594928870735&rdid=eEKESLF0LF4KTbaZ&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F19RwQojEkB%2F#" aria-label="Facebook" className="transition-colors hover:text-msred">
                   <FaFacebook />
                 </a>
@@ -112,7 +114,7 @@ const Footer = () => {
           <p>© {new Date().getFullYear()} MS Group. All rights reserved.</p>
           <div className="flex gap-6">
             <Link to="/affiliations-certifications" className="transition-colors hover:text-white">Affiliations</Link>
-            
+
             <Link to="/terms" className="transition-colors hover:text-white">Terms</Link>
           </div>
         </div>

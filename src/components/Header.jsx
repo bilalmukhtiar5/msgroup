@@ -32,12 +32,12 @@ function Header() {
           <img
             src={logo}
             alt="MS Group"
-            className="h-20 w-auto object-contain"
+            className="h-24 w-auto object-contain"
           />
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden items-center gap-9 text-sm font-semibold lg:flex">
+        <nav className="hidden items-center gap-9 text-md font-semibold lg:flex">
 
           <Link to="/" className="nav-link">
             Home
@@ -112,7 +112,7 @@ function Header() {
       {menuOpen && (
         <div className="border-t border-black/10 bg-white px-5 py-5 lg:hidden">
 
-          <div className="flex flex-col gap-4 text-sm font-semibold">
+          <div className="flex flex-col gap-4 text-md font-semibold">
 
             <Link
               to="/"

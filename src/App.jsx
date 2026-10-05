@@ -17,11 +17,14 @@ import AffiliationsCertifications from './pages/AffiliationsCertifications/Affil
 import WhatsAppButton from './components/WhatsAppButton'
 import AdminLogin from './pages/Admin/AdminLogin'
 import AdminDashboard from './pages/Admin/AdminDashboard'
+import ScrollToTop from './components/ScrollToTop';
+
 
 const App = () => {
   return (
     <>
     <BrowserRouter>
+    <ScrollToTop />
     <Header/>    
       <Routes>
         <Route path="/" element={<Home />} />
